@@ -1,5 +1,5 @@
 $(function () {
-  modalDisplay();
+  // modalDisplay();
 });
 
 function dropdownShow() {
