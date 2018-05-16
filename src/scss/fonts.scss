@@ -6,56 +6,60 @@
 
 @font-face {
   font-family: 'Ubuntu';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
   src: url('../font/Ubuntu Bold.eot');
   src: url('../font/Ubuntu Bold.eot?#iefix') format('embedded-opentype'),
   url('../font/Ubuntu Bold.woff2') format('woff2'),
   url('../font/Ubuntu Bold.woff') format('woff'),
   url('../font/Ubuntu Bold.ttf') format('truetype'),
   url('../font/Ubuntu Bold.svg#Ubuntu Bold') format('svg');
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
+
   unicode-range: U+0020-2074;
 }
 
 @font-face {
   font-family: 'Ubuntu';
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 700;
   src: url('../font/Ubuntu Bold Italic.eot');
   src: url('../font/Ubuntu Bold Italic.eot?#iefix') format('embedded-opentype'),
   url('../font/Ubuntu Bold Italic.woff2') format('woff2'),
   url('../font/Ubuntu Bold Italic.woff') format('woff'),
   url('../font/Ubuntu Bold Italic.ttf') format('truetype'),
   url('../font/Ubuntu Bold Italic.svg#Ubuntu Bold Italic') format('svg');
-  font-weight: 700;
-  font-style: italic;
-  font-stretch: normal;
+
   unicode-range: U+0020-2074;
 }
 
 @font-face {
   font-family: 'Ubuntu';
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 400;
   src: url('../font/Ubuntu Italic.eot');
   src: url('../font/Ubuntu Italic.eot?#iefix') format('embedded-opentype'),
   url('../font/Ubuntu Italic.woff2') format('woff2'),
   url('../font/Ubuntu Italic.woff') format('woff'),
   url('../font/Ubuntu Italic.ttf') format('truetype'),
   url('../font/Ubuntu Italic.svg#Ubuntu Italic') format('svg');
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal;
+
   unicode-range: U+0020-2074;
 }
 
 @font-face {
   font-family: 'Ubuntu';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
   src: url('../font/Ubuntu Regular.eot');
   src: url('../font/Ubuntu Regular.eot?#iefix') format('embedded-opentype'),
   url('../font/Ubuntu Regular.woff2') format('woff2'),
   url('../font/Ubuntu Regular.woff') format('woff'),
   url('../font/Ubuntu Regular.ttf') format('truetype'),
   url('../font/Ubuntu Regular.svg#Ubuntu Regular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
+
   unicode-range: U+0020-2074;
 }

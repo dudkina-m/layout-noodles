@@ -1,0 +1,19 @@
+extends root/layout
+
+block container
+    .container
+        include include/header
+        main.content
+            section.slider
+                include include/home/slider
+            section.stock
+                include include/home/stock
+            section.recommended
+                include include/home/recommended
+            section.popular
+                include include/home/popular
+            section.reviews
+                include include/home/reviews
+            section.about
+                include include/home/about
+        include include/footer
