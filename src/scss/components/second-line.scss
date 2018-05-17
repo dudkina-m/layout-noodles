@@ -1,0 +1,13 @@
+.second-line {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    & > .second-line__item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

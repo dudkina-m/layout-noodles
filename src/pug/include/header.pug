@@ -7,24 +7,27 @@ header.header
                 a.nav-menu__item(href="#") Оплата
                 a.nav-menu__item(href="#") Контакты
                 a.nav-menu__item(href="#") Скидки
-            .currency
-                span cur
-            .lang
-                span lng
-            .account
-                span acc
+            ul.nav-menu
+                li.currency
+                    span cur
+                li.lang
+                    span lng
+                li.account
+                    span acc
     .header__second-line
         .box
-            a.header__logo(href="#")
-                img(src="img/logo.svg" alt="logo")
-            span Розничный онлайн-магазин орехов и сухофруктов
-            div
-                span +375 (29) 111-22-33
-                span Ежедневно с 9.00 до 20.00
-            button.button Заказать звонок
-            div.basket
-                i.icon
-                span 2 товара: 74.70 р.
+            ul.second-line__list
+                li.second-line__item
+                    a.header__logo(href="#")
+                        img(src="img/logo.svg" alt="logo")
+                    span Розничный онлайн-магазин #[br] орехов и сухофруктов
+                li.second-line__item.contacts
+                    span +375 (29) 111-22-33
+                    span Ежедневно с 9.00 до 20.00
+                    button.button Заказать звонок
+                li.second-line__item.basket
+                    i.icon
+                    span 2 товара: 74.70 р.
     .header__third-line
         .box
             .menu

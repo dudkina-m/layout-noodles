@@ -1,12 +1,12 @@
 .menu {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
 
   &__item {
+    color: #000;
     font-size: 20px;
     font-weight: 500;
-    color: #000;
   }
 }
