@@ -1,4 +1,4 @@
-@import "../global";
+@import '../global';
 
 .currency {
   height: 100%;
@@ -14,9 +14,9 @@
     left: 80% !important;
   }
 
- &__angle {
-   font-size: 6px;
-   margin-left: 8px;
-   transform: translateY(-25%);
- }
+  &__angle {
+    font-size: 6px;
+    margin-left: 8px;
+    transform: translateY(-25%);
+  }
 }

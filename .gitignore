@@ -5,3 +5,4 @@ dist
 psd
 *.rar
 package-lock.json
+src/SVG_PNG

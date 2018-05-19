@@ -1,10 +1,11 @@
-@import "../global";
+@import '../global';
 
 .nav-dropdown {
-  display: flex;
-  position: relative;
-  height: 100%;
   @include transition();
+
+  display: flex;
+  height: 100%;
+  position: relative;
 
   &:hover {
     .nav-dropdown__content {
@@ -19,43 +20,44 @@
 
   &__content {
     background-color: #fff;
+    border-radius: 4px;
+    box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .2);
     display: none;
-    position: absolute;
-    z-index: 1;
     left: 50%;
+    min-width: 50px;
+    padding: 10px 0;
+    position: absolute;
     top: 38px;
     transform: translateX(-50%);
-    padding: 10px 0;
     width: 100%;
-    min-width: 50px;
-    border-radius: 4px;
-    box-shadow: 0.5px 0.866px 10px 0 rgba(0, 3, 1, 0.2);
+    z-index: 1;
 
     &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 0;
-      height: 0;
       border: 6px solid transparent;
       border-bottom-color: #fff;
       border-top: 0;
+      content: '';
+      height: 0;
+      left: 50%;
       margin-left: -6px;
       margin-top: -6px;
+      position: absolute;
+      top: 0;
+      width: 0;
     }
   }
 
   &__item {
-    color: #000;
-    padding: 15px 0;
-    cursor: pointer;
-    text-align: center;
     @include transition();
+
+    color: #000;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: center;
 
     &:hover {
       background-color: #44c900;
       color: #fff;
     }
   }
-}
+}

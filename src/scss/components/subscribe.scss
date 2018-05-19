@@ -1,0 +1,16 @@
+.subscribe {
+  display: flex;
+  margin-left: 25px;
+  width: 100%;
+
+  &__label {
+    font-weight: 500;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .button {
+    border-radius: 0;
+    max-width: 170px;
+  }
+}
