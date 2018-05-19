@@ -1,0 +1,22 @@
+.currency-dropdown {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    .currency-dropdown__content {
+      display: block;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__content {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+}

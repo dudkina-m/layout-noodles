@@ -2,12 +2,15 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 
     & > .second-line__item {
+      align-items: center;
       display: flex;
-      flex-direction: column;
+
+      & > *:first-child {
+        margin-right: 30px;
+      }
     }
   }
 }

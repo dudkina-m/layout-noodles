@@ -6,16 +6,16 @@ $text-color: #fff;
   @include transition();
 
   background-color: $bg-color;
+  border: 0;
   border-radius: 4px;
   color: $text-color;
   font-size: 12px;
-  height: 46px;
-  text-transform: uppercase;
-  width: 100%;
-  border: 0;
   font-weight: 500;
+  height: 46px;
   letter-spacing: 1px;
   max-width: 185px;
+  text-transform: uppercase;
+  width: 100%;
 
   &:hover {
     box-shadow: 0 0 10px $bg-color;

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="icons" horiz-adv-x="7">
+    <font-face font-family="icons"
+      units-per-em="5.1" ascent="5.1"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="1_ArrowDown"
+      unicode="&#xEA01;"
+      horiz-adv-x="7" d=" M6.5 5.1H0.4C0.3 5.1 0.2 5 0.1 4.9C0 4.8 0 4.7 0 4.5S0 4.2 0.1 4.1L3.2 0.2C3.3 0.1 3.4 0 3.5 0S3.7 0.1 3.8 0.2L6.9 4.1C7 4.2 7 4.3 7 4.5S7 4.8 6.9 4.9C6.7 5 6.6 5.1 6.5 5.1z" />
+  </font>
+</defs>
+</svg>
