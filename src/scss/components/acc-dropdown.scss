@@ -1,0 +1,41 @@
+.account {
+  height: 100%;
+}
+
+.acc-dropdown {
+
+  &__button {
+    background-color: #a57e44;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 30px;
+
+    &:before {
+      margin-right: 15px;
+    }
+  }
+
+  &__content {
+    top: 43px !important;
+    padding: 0 15px !important;
+
+    &:before {
+      left: 90% !important;
+    }
+  }
+
+  &__item {
+    text-align: left !important;
+    padding-left: 20px !important;
+    font-size: 16px;
+
+    &:first-child {
+      border-bottom: 2px solid #e9e9e9;
+    }
+
+    &:hover {
+      background-color: transparent !important;
+      color: #000 !important;
+    }
+  }
+}

@@ -1,22 +1,22 @@
+@import "../global";
+
+.currency {
+  height: 100%;
+  margin-right: 25px;
+}
+
 .currency-dropdown {
-  display: inline-block;
-  position: relative;
-
-  &:hover {
-    .currency-dropdown__content {
-      display: block;
-    }
-  }
-
   &__button {
     background-color: transparent;
-    border: 0;
   }
 
   &__content {
-    background-color: #fff;
-    display: none;
-    position: absolute;
-    z-index: 1;
+    left: 80% !important;
   }
+
+ &__angle {
+   font-size: 6px;
+   margin-left: 8px;
+   transform: translateY(-25%);
+ }
 }

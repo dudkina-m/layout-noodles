@@ -1,0 +1,25 @@
+.basket {
+  margin-right: 0 !important;
+  font-size: 16px;
+  display: flex;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  align-items: center;
+
+  .basket__icon {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &:hover {
+    .basket-list {
+      display: block;
+    }
+  }
+}

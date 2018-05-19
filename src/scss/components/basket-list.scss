@@ -1,0 +1,27 @@
+.basket-list {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.866px 10px 0 rgba(0, 3, 1, 0.2);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+    border-top: 0;
+    margin-left: -6px;
+    margin-top: -6px;
+  }
+}

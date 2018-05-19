@@ -9,17 +9,26 @@ header.header
                 a.nav-menu__item(href="#") Скидки
             ul.nav-menu
                 li.currency
-                    div.currency-dropdown
-                        button.currency-dropdown__button BYN #[i.icon_1_ArrowDown]
-                        ul.currency-dropdown__content
-                            li.currency-dropdown__item BYN
-                            li.currency-dropdown__item AMD
-
-
+                    div.nav-dropdown
+                        button.nav-dropdown__button.currency-dropdown__button BYN #[i.currency-dropdown__angle.icon_1_ArrowDown]
+                        ul.currency-dropdown__content.nav-dropdown__content
+                            li.nav-dropdown__item BYN
+                            li.nav-dropdown__item AMD
                 li.lang
-                    span lng
+                    div.nav-dropdown
+                        button.nav-dropdown__button.lang-dropdown__button
+                            img.lang-dropdown__img(src="../img/flag_ru.png" alt)
+                        ul.nav-dropdown__content
+                            li.nav-dropdown__item
+                                img.lang-dropdown__img(src="../img/flag_ru.png" alt)
+                            li.nav-dropdown__item
+                                img.lang-dropdown__img(src="../img/flag_am.png" alt)
                 li.account
-                    span acc
+                    div.nav-dropdown.acc-dropdown
+                        button.nav-dropdown__button.acc-dropdown__button.icon_2_Lock личный кабинет
+                        ul.nav-dropdown__content.acc-dropdown__content
+                            li.nav-dropdown__item.acc-dropdown__item Регистрация
+                            li.nav-dropdown__item.acc-dropdown__item Авторизация
     .header__second-line
         .box
             ul.second-line__list
@@ -28,12 +37,29 @@ header.header
                         img(src="img/logo.svg" alt="logo")
                     span Розничный онлайн-магазин #[br] орехов и сухофруктов
                 li.second-line__item.contacts
-                    span +375 (29) 111-22-33
-                    span Ежедневно с 9.00 до 20.00
+                    div.contacts__info
+                        a.contacts__number(href="tel:+375294175467") +375 (29) 417-54-67
+                        span Ежедневно с 9.00 до 20.00
                     button.button Заказать звонок
-                li.second-line__item.basket
-                    i.icon
-                    span 2 товара: 74.70 р.
+                li.second-line__item
+                    .basket
+                        i.icon_shopping-cart.basket__icon
+                        .basket__info
+                            span.basket__text 2&nbsp;
+                            span товара:&nbsp;
+                            span.basket__text 74.70 р.
+                        .basket-list
+                            ul
+                                li.baket-list__item 1
+                                li.baket-list__item 2
+                            .basket-list__manage
+                                .basket__discount
+                                    span 1
+                                    span 2
+                                .basket__actions
+                                    button.button.icon_shopping-cart
+                                    button.button оформление заказа
+
     .header__third-line
         .box
             .menu

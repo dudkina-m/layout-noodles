@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 $font_icons: 'icons';
 @mixin transition($props...) {
   @if (length($props) > 0) {
@@ -5,4 +7,4 @@ $font_icons: 'icons';
   } @else {
     transition: all .3s ease;
   }
-}
+}
