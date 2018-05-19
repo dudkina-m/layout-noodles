@@ -1,0 +1,6 @@
+mixin breadcrumb(way, current)
+    ul.breadcrumb
+        each val in way
+            li.breadcrumb__item
+                a(href="#")= val
+        li.breadcrumb__item= current

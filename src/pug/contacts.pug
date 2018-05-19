@@ -1,0 +1,15 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.contacts
+                .box
+                    +breadcrumb(["Главная"], "Контакты")
+                    include include/contacts/phone
+            section.addresses
+                .box
+                    include include/contacts/addresses
+        include include/footer
