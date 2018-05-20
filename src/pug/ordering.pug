@@ -1,0 +1,20 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.section
+                .box
+                    +breadcrumb(["Главная"], "Корзина")
+                    h1.caption Корзина
+                    include include/basket/basket-table
+                    .basket__sum Сумма заказа: #[span.basket__sum-value 66.30 р.]
+            section.section
+                .box
+                    include include/basket/basket-form
+            section.section
+                .box
+                    include include/basket/basket-ordering
+        include include/footer

@@ -1,0 +1,23 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.discount
+                .box
+                    +breadcrumb(["Главная"], "Скидки")
+                    h1.caption Скидки
+                    .discount__text Для зарегистрированных персональная скидка:
+                    ul.discount__list
+                        li.discount__item #[span.discount__sum 50 р.]&nbsp;=&nbsp;#[span.discount__percent 5%]&nbsp;скидка
+                        li.discount__item #[span.discount__sum 75 р.]&nbsp;=&nbsp;#[span.discount__percent 10%]&nbsp;скидка
+                        li.discount__item #[span.discount__sum 100 р.]&nbsp;=&nbsp;#[span.discount__percent 15%]&nbsp;скидка
+                    .discount__text По сумме заказа для всех покупателей:
+                    ul.discount__list
+                        li.discount__item #[span.discount__sum 50 р.]&nbsp;=&nbsp;#[span.discount__percent 10%]&nbsp;скидка
+                        li.discount__item #[span.discount__sum 100 р.]&nbsp;=&nbsp;#[span.discount__percent 15%]&nbsp;скидка
+                        li.discount__item #[span.discount__sum 150 р. и более]&nbsp;=&nbsp;#[span.discount__percent 20%]&nbsp;скидка
+                    .discount__text Для зарегистрированных пользователей первой учитывается персональная скидка.
+        include include/footer

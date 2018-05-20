@@ -1,0 +1,24 @@
+.basket-table {
+  table-layout: fixed;
+
+  th:nth-child(1) {
+    width: 15% !important;
+  }
+
+  th:nth-child(7) {
+    width: 4% !important;
+  }
+
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5),
+  th:nth-child(6) {
+    width: 10%;
+  }
+
+  .table__cell {
+    img {
+      width: 100px;
+    }
+  }
+}

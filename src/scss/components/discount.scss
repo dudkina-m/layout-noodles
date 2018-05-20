@@ -1,0 +1,24 @@
+.discount {
+  background-color: #f7f7f7;
+  padding: 25px 0 65px;
+
+  &__text {
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  &__sum, &__percent {
+    font-size: 24px;
+  }
+
+  &__percent {
+    color: #44c900;
+  }
+}

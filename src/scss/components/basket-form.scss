@@ -1,0 +1,18 @@
+.basket-form {
+  &__container {
+    display: flex;
+
+    .caption {
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    width: 60%;
+    margin-right: 30px;
+  }
+
+  &__options {
+    width: 40%;
+  }
+}

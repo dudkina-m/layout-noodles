@@ -22,4 +22,42 @@
       display: block;
     }
   }
-}
+
+  &__delete {
+    color: #9d0202;
+    border: 0;
+    background-color: transparent;
+  }
+
+  &__sum {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    align-items: center;
+
+    & .discount__percent {
+      font-size: inherit;
+    }
+
+    &.common {
+      font-size: 20px;
+
+      & .basket__sum-value {
+        font-size: 32px;
+      }
+    }
+
+    &-value {
+      width: 150px;
+      text-align: right;
+      color: #782c08;
+      font-size: 24px;
+    }
+  }
+
+  &__manage {
+    margin-top: 55px;
+  }
+}
