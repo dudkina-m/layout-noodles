@@ -1,18 +1,38 @@
 .basket-form {
+  //margin-top: 30px;
+
+  .form__label {
+    width: 25%;
+  }
+
   &__container {
     display: flex;
 
-    .caption {
-      margin: 0;
+    .caption:first-child {
+      margin-top: 0;
+    }
+
+    .caption:not(:first-child) {
+      margin-top: 30px;
     }
   }
 
   &__contacts {
     margin-right: 30px;
     width: 60%;
+
+    .input, .textarea {
+      width: 55% !important;
+    }
   }
 
   &__options {
     width: 40%;
+
+    .radio__group {
+      .radio__container:first-child {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

@@ -13,24 +13,24 @@ block container
                     .personal__container
                         .personal__info
                             h1.caption Редактировать адрес
-                            .personal-form
-                                .personal-form__block
-                                    label.personal-form__label Имя:
+                            .form
+                                .form__block
+                                    label.form__label Имя:
                                     input.input(type="text")
-                                .personal-form__block
-                                    label.personal-form__label Фамилия:
+                                .form__block
+                                    label.form__label Фамилия:
                                     input.input(type="text")
-                                .personal-form__block
-                                    label.personal-form__label Адрес:
+                                .form__block
+                                    label.form__label Адрес:
                                     input.input(type="text")
-                                .personal-form__block
-                                    label.personal-form__label Город:
+                                .form__block
+                                    label.form__label Город:
                                     input.input(type="text")
-                                .personal-form__block
-                                    label.personal-form__label Страна:
+                                .form__block
+                                    label.form__label Страна:
                                     +dropdown(["Беларусь"])
-                                .personal-form__block
-                                    label.personal-form__label Основной адрес:
+                                .form__block
+                                    label.form__label Основной адрес:
                                     .radio__group
                                         +radio("Да", "address", "res-addr-yes")
                                         +radio("Нет", "address", "res-addr-no")

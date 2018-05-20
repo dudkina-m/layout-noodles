@@ -1,4 +1,29 @@
 .basket-form__container
     .basket-form__contacts
         h1.caption Контакты
+        .basket-form
+            .form__block
+                label.form__label Имя:
+                input.input(type="text")
+            .form__block
+                label.form__label Номер телефона:
+                input.input(type="text")
+            .form__block
+                label.form__label Email:
+                input.input(type="text")
+            .form__block
+                label.form__label Комментарий:
+                textarea.textarea
     .basket-form__options
+        h1.caption Способ доставки
+        .radio__group
+            +radio("Самовывоз", "delivery-type", "self")
+            +radio("Курьерская доставка", "delivery-type", "courier")
+
+        h1.caption Адрес магазина
+        +dropdown(["Адрес магазина #1"])
+
+        h1.caption Способ оплаты
+        .radio__group
+            +radio("Оплата при получении", "payment", "on-get")
+            +radio("Онлайн-оплата", "payment", "online")
