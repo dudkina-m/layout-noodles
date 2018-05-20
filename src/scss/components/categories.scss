@@ -1,0 +1,33 @@
+.categories {
+  width: 75%;
+
+  &__container {
+    display: flex;
+    margin-top: 55px;
+
+    .caption {
+      margin-top: 0;
+    }
+
+    .side-menu {
+      margin-right: 30px;
+      width: 25%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+
+    &_card {
+      flex-direction: column;
+    }
+
+    &_row {
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.product-card {
+  .caption {
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 55px;
+
+    .side-menu {
+      margin-right: 30px;
+      width: 25%;
+    }
+  }
+}

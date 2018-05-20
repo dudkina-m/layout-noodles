@@ -8,13 +8,14 @@
   }
 
   &__list {
-    margin-bottom: 50px;
+    color: #000;
     font-size: 18px;
     font-weight: 500;
-    color: #000;
+    margin-bottom: 50px;
   }
 
-  &__sum, &__percent {
+  &__sum,
+  &__percent {
     font-size: 24px;
   }
 

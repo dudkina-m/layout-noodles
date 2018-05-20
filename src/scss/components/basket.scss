@@ -24,18 +24,18 @@
   }
 
   &__delete {
-    color: #9d0202;
-    border: 0;
     background-color: transparent;
+    border: 0;
+    color: #9d0202;
   }
 
   &__sum {
-    display: flex;
-    justify-content: flex-end;
-    font-weight: 500;
-    font-size: 18px;
-    color: #000;
     align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: flex-end;
 
     & .discount__percent {
       font-size: inherit;
@@ -50,10 +50,10 @@
     }
 
     &-value {
-      width: 150px;
-      text-align: right;
       color: #782c08;
       font-size: 24px;
+      text-align: right;
+      width: 150px;
     }
   }
 

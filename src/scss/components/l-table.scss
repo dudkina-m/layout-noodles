@@ -1,21 +1,20 @@
 .table {
-  width: 100%;
-  margin-top: 5px;
   margin-bottom: 40px;
+  margin-top: 5px;
   table-layout: fixed;
+  width: 100%;
 
   &__head {
-
     th {
       background-color: #44c900;
+      border-bottom: 1px solid #44c900;
+      border-top: 1px solid #44c900;
       color: #fff;
       padding: 15px 0;
-      border-top: 1px solid #44c900;
-      border-bottom: 1px solid #44c900;
     }
     th:first-child {
-      border-right: 1px solid #dedede;
       border-left: 1px solid #44c900;
+      border-right: 1px solid #dedede;
       width: 25%;
     }
 
@@ -27,23 +26,22 @@
   }
 
   &__cell {
+    border: 1px solid #dedede;
+    color: #000;
+    font-size: 16px;
     padding: 15px 0;
     text-align: center;
-    font-size: 16px;
-    color: #000;
-    border: 1px solid #dedede;
   }
 
   &__foot {
     td {
       background-color: #f0f0f0;
-      text-align: center;
-      font-weight: 500;
+      border: 1px solid #dedede;
       color: #000;
       font-size: 18px;
+      font-weight: 500;
       padding: 15px 0;
-      border: 1px solid #dedede;
+      text-align: center;
     }
-
   }
 }

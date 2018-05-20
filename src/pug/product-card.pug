@@ -1,0 +1,24 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.section
+                .box
+                    +breadcrumb(["Главная", "Орехи", "Грецкие орехи"], "Грецкий орех очищенный (отборный)")
+                    .product-card__container
+                        ul.side-menu
+                            li.side-menu__caption Категории
+                            li.side-menu__item.active Орехи
+                            li.side-menu__item Сухофрукты
+                            li.side-menu__item Цукаты
+                            li.side-menu__item Специи и пряности
+                            li.side-menu__item Семечки
+                            li.side-menu__item Сладости
+                            li.side-menu__item Мёд
+                        .product-card
+                            h1.caption Грецкий орех очищенный (отборный)
+
+        include include/footer

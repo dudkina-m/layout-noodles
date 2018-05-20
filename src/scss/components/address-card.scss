@@ -2,22 +2,23 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .04);
-  height: 195px;
-  padding: 30px 40px;
   display: flex;
   flex-direction: column;
+  height: 195px;
   justify-content: space-between;
+  padding: 30px 40px;
 
   &__manage {
     display: flex;
   }
 
-  &__edit, &__delete {
+  &__edit,
+  &__delete {
     text-decoration: underline;
 
     &:before {
-      margin-right: 5px;
       font-size: 12px;
+      margin-right: 5px;
     }
   }
 

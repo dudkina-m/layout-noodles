@@ -1,0 +1,34 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.section
+                .box
+                    +breadcrumb(["Главная", "Орехи"], "Грецкие орехи")
+                    .categories__container
+                        ul.side-menu
+                            li.side-menu__caption Категории
+                            li.side-menu__item.active.hasSubmenu Орехи
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Сухофрукты
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Цукаты
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Специи и пряности
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Семечки
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Сладости
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Мёд
+                                include include/submenu
+                        .categories
+                            .categories__header
+                                h1.caption Грецкие орехи
+                            - for (var i = 0; i < 7; i++) {
+                                include include/product-row
+                            -}
+        include include/footer
