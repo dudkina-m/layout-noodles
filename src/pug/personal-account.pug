@@ -1,0 +1,36 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.personal
+                .box
+                    +breadcrumb(["Главная"], "Личный кабинет")
+                    .personal__container
+                        .personal__info
+                            h1.caption Личный кабинет
+                            ul.personal__list
+                                li.personal__item #[img(src="../img/user.svg" alt)] Алексей Косейков
+                                li.personal__item #[img(src="../img/call.svg" alt)] +375 (29) 417-54-67
+                                li.personal__item #[img(src="../img/envelope.svg" alt)]
+                                    a(href="mailto:ivanivanov@mail.ru") ivanivanov@mail.ru
+                                li.personal__item #[img(src="../img/marker.svg" alt)] г. Минск, ул. Сурганова, д. 4, кв. 34
+                                li.personal__item #[img(src="../img/discount.svg" alt)] Персональная скидка:&nbsp; #[span.personal__discount 5%]
+
+                        ul.side-menu
+                            li.side-menu__item.active
+                                a(href="#") личный кабинет
+                            li.side-menu__item
+                                a(href="#") учетная запись
+                            li.side-menu__item
+                                a(href="#") адреса доставки
+                            li.side-menu__item
+                                a(href="#") бонусная система
+                            li.side-menu__item
+                                a(href="#") изменить пароль
+                            li.side-menu__item
+                                a(href="#") выход
+
+        include include/footer

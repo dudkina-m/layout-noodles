@@ -1,12 +1,11 @@
 .breadcrumb {
-
   &__item {
-    display: inline;
     color: #000;
+    display: inline;
 
-    &+.breadcrumb__item:before {
+    & + .breadcrumb__item:before {
+      content: '/\00a0';
       padding: 8px;
-      content: "/\00a0";
     }
 
     a {

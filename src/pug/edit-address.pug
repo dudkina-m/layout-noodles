@@ -1,0 +1,45 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.personal
+                .box
+                    +breadcrumb(["Главная", "Личный кабинет", "Адреса доставки"], "Редактировать адрес")
+                    .personal__container
+                        .personal__info
+                            h1.caption Редактировать адрес
+                            .personal-form
+                                .personal-form__block
+                                    label.personal-form__label Имя:
+                                    input.input(type="text")
+                                .personal-form__block
+                                    label.personal-form__label Фамилия:
+                                    input.input(type="text")
+                                .personal-form__block
+                                    label.personal-form__label Адрес:
+                                    input.input(type="text")
+                                .personal-form__block
+                                    label.personal-form__label Город:
+                                    input.input(type="text")
+                            .personal__manage
+                                button.button.button__left #[i.icon_arrow-left] вернуться
+                                button.button.button__right продолжить #[i.icon_arrow-right]
+
+                        ul.side-menu
+                            li.side-menu__item
+                                a(href="#") личный кабинет
+                            li.side-menu__item
+                                a(href="#") учетная запись
+                            li.side-menu__item.active
+                                a(href="#") адреса доставки
+                            li.side-menu__item
+                                a(href="#") бонусная система
+                            li.side-menu__item
+                                a(href="#") изменить пароль
+                            li.side-menu__item
+                                a(href="#") выход
+
+        include include/footer
