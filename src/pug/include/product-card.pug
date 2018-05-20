@@ -1,2 +1,17 @@
 .product.card
-
+    img(src="img/peanut-1.png" alt)
+    .product__content
+        .product__info
+            span.product__title Арахис в белом шоколаде
+            span.product__price 10.00 р.
+        .product__manage
+            .product__options
+                .option
+                    label.option__label Количество:
+                    input.input
+                .option
+                    label.option__label Фасовка, г.:
+                    +dropdown(["700"])
+            .product__actions
+                button.button купить в 1 клик
+                button.button.icon_shopping-cart

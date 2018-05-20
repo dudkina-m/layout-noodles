@@ -1,0 +1,14 @@
+.present {
+  display: flex;
+
+  &__item {
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &.active {
+      color: #a57e44;
+    }
+  }
+}

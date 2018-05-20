@@ -11,13 +11,20 @@ block container
                     .product-card__container
                         ul.side-menu
                             li.side-menu__caption Категории
-                            li.side-menu__item.active Орехи
-                            li.side-menu__item Сухофрукты
-                            li.side-menu__item Цукаты
-                            li.side-menu__item Специи и пряности
-                            li.side-menu__item Семечки
-                            li.side-menu__item Сладости
-                            li.side-menu__item Мёд
+                            li.side-menu__item.active.hasSubmenu Орехи
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Сухофрукты
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Цукаты
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Специи и пряности
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Семечки
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Сладости
+                                include include/submenu
+                            li.side-menu__item.hasSubmenu Мёд
+                                include include/submenu
                         .product-card
                             h1.caption Грецкий орех очищенный (отборный)
 

@@ -1,5 +1,6 @@
 extends root/layout
 include mixins/breadcrumb
+include mixins/dropdown
 
 block container
     .container
@@ -9,27 +10,41 @@ block container
                 .box
                     +breadcrumb(["Главная", "Орехи"], "Грецкие орехи")
                     .categories__container
-                        ul.side-menu
-                            li.side-menu__caption Категории
-                            li.side-menu__item.active.hasSubmenu Орехи
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Сухофрукты
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Цукаты
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Специи и пряности
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Семечки
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Сладости
-                                include include/submenu
-                            li.side-menu__item.hasSubmenu Мёд
-                                include include/submenu
+                        .aside
+                            ul.side-menu
+                                li.side-menu__caption Категории
+                                li.side-menu__item.active.hasSubmenu Орехи
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Сухофрукты
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Цукаты
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Специи и пряности
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Семечки
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Сладости
+                                    include include/submenu
+                                li.side-menu__item.hasSubmenu Мёд
+                                    include include/submenu
+                            include include/recent
                         .categories
                             .categories__header
                                 h1.caption Грецкие орехи
+                                .categories__filters
+                                    label.filter__label Сортировка:
+                                    +dropdown(["По названию А - Я"])
+                                    ul.present
+                                        li.present__item.active
+                                            a.icon_32_TablesActive(href="#")
+                                        li.present__item
+                                            a.icon_33_LinesNeactive(href="#")
                             .grid
-                                .grid__item_3
+                                - for (var i = 0; i < 9; i++) {
+                                    .grid__item_3
+                                        include include/product-card
+                                -}
+                            include include/pagination
 
 
         include include/footer

@@ -8,17 +8,51 @@
     margin-bottom: 20px;
     padding: 40px;
 
+    img {
+      width: 240px;
+    }
+
     .product__info {
       justify-content: space-between;
     }
   }
 
   &.card {
-    padding: 20px 30px;
+    padding: 25px;
+    text-align: center;
 
     .product__info {
       align-items: center;
       flex-direction: column;
+    }
+
+    .product__content {
+      margin: 0;
+    }
+
+    .product__manage {
+      flex-direction: column;
+    }
+
+    .product__actions {
+      margin-top: 30px;
+      justify-content: space-between;
+
+      .button:first-child {
+        padding: 0 20px;
+      }
+    }
+
+    .product__options {
+      width: 100%;
+    }
+
+    .option {
+      justify-content: space-between;
+
+      &__label {
+        width: max-content;
+      }
     }
   }
 
@@ -70,5 +104,11 @@
   }
 
   &__options {
+    display: flex;
+    flex-direction: column;
+
+    .option:first-child {
+      margin-bottom: 10px;
+    }
   }
 }

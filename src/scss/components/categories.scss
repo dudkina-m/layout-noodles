@@ -9,7 +9,7 @@
       margin-top: 0;
     }
 
-    .side-menu {
+    .aside {
       margin-right: 30px;
       width: 25%;
     }
@@ -18,6 +18,12 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .caption {
+      margin-bottom: 0;
+    }
   }
 
   &__content {
@@ -26,8 +32,18 @@
     &_card {
       flex-direction: column;
     }
+  }
 
-    &_row {
+  &__filters {
+    display: flex;
+    align-items: center;
+
+    & > .present {
+      margin-left: 50px;
+    }
+
+    & > .filter__label {
+      margin-right: 15px;
     }
   }
 }
