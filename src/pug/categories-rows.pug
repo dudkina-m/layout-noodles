@@ -1,5 +1,6 @@
 extends root/layout
 include mixins/breadcrumb
+include mixins/dropdown
 
 block container
     .container
@@ -28,6 +29,7 @@ block container
                         .categories
                             .categories__header
                                 h1.caption Грецкие орехи
+                                +dropdown(["По названию А - Я"])
                             - for (var i = 0; i < 7; i++) {
                                 include include/product-row
                             -}

@@ -1,0 +1,65 @@
+.radio {
+  &__container {
+    cursor: pointer;
+    display: block;
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    width: max-content;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    &.checked {
+      font-weight: 500;
+      color: #000;
+    }
+
+    & input {
+      display: none;
+
+      &:checked ~ .radio__label {
+        font-weight: 500;
+        color: #000;
+
+        .radio__mark {
+          border: 1px solid #a57e44;
+
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__mark {
+    background-color: #fff;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 50%;
+    box-shadow: inset .5px .866px 5px 0 rgba(0, 3, 1, .1);
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 4px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #a57e44;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+}

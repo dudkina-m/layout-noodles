@@ -133,3 +133,7 @@ function modalDisplay() {
         }
     });
 }
+
+function toggleRadio() {
+
+}

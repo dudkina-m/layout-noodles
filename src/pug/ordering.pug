@@ -1,5 +1,6 @@
 extends root/layout
 include mixins/breadcrumb
+include mixins/radio
 
 block container
     .container
@@ -14,6 +15,7 @@ block container
             section.section
                 .box
                     include include/basket/basket-form
+                    +radio("Самовывоз", "delivery", "delivery-self")
             section.section
                 .box
                     include include/basket/basket-ordering

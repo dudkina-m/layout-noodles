@@ -1,0 +1,16 @@
+.dropdown {
+  background: url('../../img/icon-select.svg') no-repeat 95% 50%;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 4px;
+  box-shadow: inset .5px .866px 5px 0 rgba(0, 3, 1, .1);
+  height: 40px;
+  overflow: hidden;
+  padding: 10px 40px 10px 20px;
+
+  -webkit-appearance: none;
+     -moz-appearance: window;
+}
+
+select::-ms-expand {
+  display: none;
+}

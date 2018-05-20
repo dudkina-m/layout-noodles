@@ -1,0 +1,5 @@
+mixin radio(label, name, id)
+    div.radio__container
+        input(type="radio" name=name id=id)
+        label.radio__label(for=id)= label
+            span.radio__mark

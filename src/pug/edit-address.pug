@@ -1,5 +1,7 @@
 extends root/layout
 include mixins/breadcrumb
+include mixins/dropdown
+include mixins/radio
 
 block container
     .container
@@ -24,6 +26,14 @@ block container
                                 .personal-form__block
                                     label.personal-form__label Город:
                                     input.input(type="text")
+                                .personal-form__block
+                                    label.personal-form__label Страна:
+                                    +dropdown(["Беларусь"])
+                                .personal-form__block
+                                    label.personal-form__label Основной адрес:
+                                    .radio__group
+                                        +radio("Да", "address", "res-addr-yes")
+                                        +radio("Нет", "address", "res-addr-no")
                             .personal__manage
                                 button.button.button__left #[i.icon_arrow-left] вернуться
                                 button.button.button__right продолжить #[i.icon_arrow-right]
