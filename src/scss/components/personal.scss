@@ -48,5 +48,9 @@
     justify-content: space-between;
     margin-top: 60px;
     width: 100%;
+
+    &.bonus {
+      justify-content: flex-end;
+    }
   }
 }

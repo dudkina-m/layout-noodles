@@ -1,0 +1,51 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.personal
+                .box
+                    +breadcrumb(["Главная", "Личный кабинет"], "Бонусная система")
+                    .personal__container
+                        .personal__info
+                            h1.caption Бонусная система
+                            .personal__item #[img(src="../img/discount.svg" alt)] Персональная скидка:&nbsp; #[span.personal__discount 5%]
+                            table.table
+                                thead.table__head
+                                    tr
+                                        th Дата начисления
+                                        th Начислены за
+                                        th Сумма заказа
+                                tbody
+                                    tr.table__row
+                                        td.table__cell 12.04.2018 17:36
+                                        td.table__cell Арахис в белом шоколаде
+                                        td.table__cell 30 р.
+                                    tr.table__row
+                                        td.table__cell 12.04.2018 17:36
+                                        td.table__cell Грецкий орех очищенный (отборный)
+                                        td.table__cell 25 р.
+                                tfoot.table__foot
+                                    tr
+                                        td(colspan="3") Вы еще ничего не заказали
+                            span.bonus__info Вы купили на:&nbsp; #[span.bonus__sum 55.00р]
+                            .personal__manage.bonus
+                                button.button.button__right продолжить #[i.icon_arrow-right]
+
+                        ul.side-menu
+                            li.side-menu__item
+                                a(href="#") личный кабинет
+                            li.side-menu__item
+                                a(href="#") учетная запись
+                            li.side-menu__item
+                                a(href="#") адреса доставки
+                            li.side-menu__item.active
+                                a(href="#") бонусная система
+                            li.side-menu__item
+                                a(href="#") изменить пароль
+                            li.side-menu__item
+                                a(href="#") выход
+
+        include include/footer

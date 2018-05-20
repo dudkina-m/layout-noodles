@@ -1,0 +1,32 @@
+.address-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .04);
+  height: 195px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__manage {
+    display: flex;
+  }
+
+  &__edit, &__delete {
+    text-decoration: underline;
+
+    &:before {
+      margin-right: 5px;
+      font-size: 12px;
+    }
+  }
+
+  &__delete {
+    color: #9d0202;
+  }
+
+  &__edit {
+    color: #2c7806;
+    margin-right: 30px;
+  }
+}

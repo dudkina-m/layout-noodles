@@ -1,0 +1,49 @@
+extends root/layout
+include mixins/breadcrumb
+
+block container
+    .container
+        include include/header
+        main.content
+            section.personal
+                .box
+                    +breadcrumb(["Главная", "Личный кабинет"], "Адреса доставки")
+                    .personal__container
+                        .personal__info
+                            h1.caption Адреса доставки
+                            .grid
+                                .grid__item
+                                    .address-card
+                                        ul.personal__list
+                                            li.personal__item #[img(src="../img/user.svg" alt)] Алексей Косейков
+                                            li.personal__item #[img(src="../img/marker.svg" alt)] г. Минск, ул. Сурганова, д. 4, кв. 34
+                                        .address-card__manage
+                                            a.address-card__edit.icon_edit(href="#") Редактировать
+                                            a.address-card__delete.icon_delete(href="#") Удалить
+                                .grid__item
+                                    .address-card
+                                        ul.personal__list
+                                            li.personal__item #[img(src="../img/user.svg" alt)] Алексей Косейков
+                                            li.personal__item #[img(src="../img/marker.svg" alt)] г. Минск, ул. Притыцкого, д. 22, кв. 234
+                                        .address-card__manage
+                                            a.address-card__edit.icon_edit(href="#") Редактировать
+                                            a.address-card__delete.icon_delete(href="#") Удалить
+                            .personal__manage
+                                button.button.button__left #[i.icon_arrow-left] вернуться
+                                button.button.button__right новый адрес
+
+                        ul.side-menu
+                            li.side-menu__item
+                                a(href="#") личный кабинет
+                            li.side-menu__item
+                                a(href="#") учетная запись
+                            li.side-menu__item.active
+                                a(href="#") адреса доставки
+                            li.side-menu__item
+                                a(href="#") бонусная система
+                            li.side-menu__item
+                                a(href="#") изменить пароль
+                            li.side-menu__item
+                                a(href="#") выход
+
+        include include/footer
