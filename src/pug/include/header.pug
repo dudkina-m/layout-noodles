@@ -75,18 +75,25 @@ header.header
 
     .header__third-line
         .box
-            ul.menu
-                li.menu__item Орехи
-                    ul.categories-menu
-                        - for (var i = 0; i < 8; i++) {
-                            li.categories-menu__item
-                                a(href="#")
-                                    img(src="img/peanut-type.png" alt)
-                                    span.title Арахис #[i.icon_arrow-right]
-                        -}
-                li.menu__item Сухофрукты
-                li.menu__item Цукаты
-                li.menu__item Специи и пряности
-                li.menu__item Семечки
-                li.menu__item Сладости
-                li.menu__item Мёд
+            .menu
+                .menu__wrapper
+                    .menu__item Орехи
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Сухофрукты
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Цукаты
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Специи и пряности
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Семечки
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Сладости
+                        include categories-menu
+                .menu__wrapper
+                    .menu__item Мёд
+                        include categories-menu
