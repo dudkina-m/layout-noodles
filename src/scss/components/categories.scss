@@ -16,9 +16,9 @@
   }
 
   &__header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
 
     .caption {
@@ -35,8 +35,8 @@
   }
 
   &__filters {
-    display: flex;
     align-items: center;
+    display: flex;
 
     & > .present {
       margin-left: 50px;

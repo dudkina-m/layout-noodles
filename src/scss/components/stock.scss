@@ -1,0 +1,33 @@
+@import '../global';
+
+.stock {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  position: relative;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .caption {
+      margin: 0;
+    }
+
+    button[class*='icon'] {
+      @include transition();
+
+      background-color: transparent;
+      border: 0;
+
+      &:before {
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: #44c900;
+      }
+    }
+  }
+}

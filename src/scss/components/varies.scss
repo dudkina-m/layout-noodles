@@ -1,0 +1,32 @@
+.varies {
+  &__row {
+    align-items: center;
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+    .radio__container {
+      width: 100px;
+    }
+  }
+
+  &__price {
+    color: #782c08;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+
+  &__old-price {
+    color: #782c08;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+    text-decoration: line-through;
+  }
+
+  //&__divider {
+  //  margin-left: 15px;
+  //}
+}

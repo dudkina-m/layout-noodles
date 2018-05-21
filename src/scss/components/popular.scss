@@ -1,0 +1,16 @@
+.popular {
+  &__container {
+    background: url('../img/slider2-bg.png') center no-repeat;
+    height: 540px;
+
+    & > .box {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
+
+    &__content {
+    }
+  }
+}

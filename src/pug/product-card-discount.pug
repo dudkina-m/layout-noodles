@@ -1,9 +1,11 @@
 extends root/layout
 include mixins/breadcrumb
+include mixins/radio
 
 block container
     .container
         include include/header
+        include include/search
         main.content
             section.section
                 .box
@@ -25,7 +27,54 @@ block container
                                 include include/submenu
                             li.side-menu__item.hasSubmenu Мёд
                                 include include/submenu
-                        .product-card
+                        .product-card.have-discount
                             h1.caption Грецкий орех очищенный (отборный)
+                            ul.common__info
+                                li.info__item
+                                    span Производитель:&nbsp;
+                                    span.info__data Россия
+                                li.info__item
+                                    span Код товара:&nbsp;
+                                    span.info__data 123-АБ
+                            .product-card__content
+                                .product-card__img
+                                    img(src="../img/peanut.png" alt)
+                                    span.product-card__discount 20%
+                                .product-card__manage
+                                    .product-card__varies
+                                        .varies__row
+                                            +radio("100 г.:", "varies", "varies-100")
+                                            span.varies__divider &mdash;
+                                            span.varies__price 4.00 р.
+                                            span.varies__old-price 5.00 р.
+                                        .varies__row
+                                            +radio("250 г.:", "varies", "varies-250")
+                                            span.varies__divider &mdash;
+                                            span.varies__price 10.00 р.
+                                            span.varies__old-price 12.00 р.
+                                        .varies__row
+                                            +radio("500 г.:", "varies", "varies-500")
+                                            span.varies__divider &mdash;
+                                            span.varies__price 20.00 р.
+                                            span.varies__old-price 25.00 р.
+                                        .varies__row
+                                            +radio("1 кг.:", "varies", "varies-1000")
+                                            span.varies__divider &mdash;
+                                            span.varies__price 40.00 р.
+                                            span.varies__old-price 50.00 р.
+
+                                    .product-card__common
+                                        .common
+                                            label.common__label Количество:
+                                            input.input(type="text")
+                                        .common
+                                            label.common__label Цена:
+                                            span.common__price 200.00 р.
+                                    .product-card__actions
+                                        button.button купить в 1 клик
+                                        button.button.icon_shopping-cart
+                            .product-card__description
+                                .product-card__title Краткое описание
+                                p Грецкие орехи микс представляют собой смесь восьмушек, четвертушек и бабочек. Вы можете купить грецкий орех микс, заказав предварительно процентное соотношение компонентов смеси. Обычно в миксе 30% составляет грецкий орех бабочка и остальные 70% - грецкий орех восьмушка и четвертинка. Покупатель может купить грецкий орех микс для использования в пекарской или кулинарной промышленности – эта категория идеально подходит для любой выпечки.
 
         include include/footer

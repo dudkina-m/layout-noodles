@@ -1,0 +1,21 @@
+.home {
+  .grid__item_4 {
+    padding-top: 15px;
+  }
+
+  .caption {
+    margin-bottom: 0;
+  }
+
+  .slick-slide img {
+    display: initial;
+  }
+
+  .slick-next:before {
+    content: url('../img/carousel-right.svg');
+  }
+
+  .slick-prev:before {
+    content: url('../img/carousel-left.svg');
+  }
+}

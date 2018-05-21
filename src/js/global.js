@@ -2,6 +2,10 @@ $(function () {
   // modalDisplay();
     if ($("#map").length)
         initMap();
+
+    if ($('.carousel').length) initSlick();
+    if ($('.stock__slider').length) initSlickMupltiple();
+    if ($('.popular__content').length) initPopularSlick();
 });
 
 function initMap() {
@@ -22,6 +26,39 @@ function initMap() {
     });
 
     myMap.geoObjects.add(myPlacemark);
+}
+
+function initSlick() {
+    $(".carousel").slick({
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
+}
+
+function initPopularSlick() {
+    $(".popular__content").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
+}
+
+function initSlickMupltiple() {
+    $('.stock__slider_recommended').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow: $("button.recommended.icon_arrow-right"),
+        prevArrow: $("button.recommended.icon_arrow-left")
+    });
+
+    $('.stock__slider_sale').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow: $("button.sale.icon_arrow-right"),
+        prevArrow: $("button.sale.icon_arrow-left")
+    });
 }
 
 function dropdownShow() {

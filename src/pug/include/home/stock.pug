@@ -1,0 +1,23 @@
+.box
+    .stock__header
+        h1.caption Товары по акции
+        .stock__manage
+            button.sale.icon_arrow-left
+            button.sale.icon_arrow-right
+
+    .stock__slider.stock__slider_sale.grid
+        - for (var i = 0; i < 8; i++) {
+            .grid__item_4
+                include ../product-card-discount
+        -}
+
+    .stock__header
+        h1.caption Рекомендуемые товары
+        .stock__manage
+            button.recommended.icon_arrow-left
+            button.recommended.icon_arrow-right
+    .stock__slider.stock__slider_recommended.grid
+        - for (var i = 0; i < 8; i++) {
+        .grid__item_4
+            include ../product-card
+        -}

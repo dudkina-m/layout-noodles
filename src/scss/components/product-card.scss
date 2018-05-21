@@ -11,5 +11,89 @@
       margin-right: 30px;
       width: 25%;
     }
+
+    .product-card {
+      width: 75%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin: 30px 0;
+
+    .product-card__img {
+      margin-right: 30px;
+      width: 55%;
+    }
+  }
+
+  &__varies {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .04);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  &__description {
+    margin-top: 25px;
+  }
+
+  &__common {
+    align-items: center;
+    display: flex;
+
+    .common:first-child {
+      margin-right: 20px;
+    }
+
+    .input {
+      width: 110px;
+    }
+  }
+
+  &__manage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    display: flex;
+
+    .button:first-child {
+      margin-right: 10px;
+      padding: 0 48px;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__discount {
+    background-color: #df1818;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    left: 30px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 30px;
+  }
+
+  &.have-discount {
+    .varies__price {
+      color: #df1818;
+    }
   }
 }

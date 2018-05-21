@@ -1,4 +1,61 @@
 .about {
   background-color: #f7f7f7;
+  font-size: 16px;
+  padding-bottom: 30px;
   padding-top: 25px;
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    margin: 20px 0;
+    width: max-content;
+  }
+
+  &__subtitle {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    li:not(:first-child) {
+      margin-top: 5px;
+    }
+
+    li:before {
+      content: '\2022';
+      margin-right: 30px;
+    }
+  }
+
+  &__container {
+    margin: 55px 0;
+    display: flex;
+
+    img {
+      height: max-content;
+    }
+  }
+
+  &__content {
+    margin-left: 30px;
+
+    .caption {
+      margin-top: 0;
+      line-height: 1;
+    }
+
+    .text {
+      font-size: 16px;
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
 }

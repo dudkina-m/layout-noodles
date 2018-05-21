@@ -1,9 +1,12 @@
-.product.row
+.product.card.have-discount
     img(src="img/peanut-1.png" alt)
+    span.product-card__discount 20%
     .product__content
         .product__info
             a.product__title(href="#") Арахис в белом шоколаде
-            span.product__price 10.00 р.
+            .price
+                span.product__old-price 12.00 р.
+                span.product__price 10.00 р.
         .product__manage
             .product__options
                 .option
