@@ -50,25 +50,43 @@ header.header
                             span.basket__text 2&nbsp;
                             span товара:&nbsp;
                             span.basket__text 74.70 р.
-                        //.basket-list
-                        //    ul
-                        //        li.baket-list__item 1
-                        //        li.baket-list__item 2
-                        //    .basket-list__manage
-                        //        .basket__discount
-                        //            span 1
-                        //            span 2
-                        //        .basket__actions
-                        //            button.button.icon_shopping-cart
-                        //            button.button оформление заказа
+                        .basket-list
+                            ul
+                                li.basket-list__item
+                                    img(src="img/peanut-1.png")
+                                    a.title(href="#") Арахис в белом шоколаде, 100 г.
+                                    .quantity x2
+                                    .price 8.00 р.
+                                    button.basket__delete.icon_delete(title="Удалить")
+                                li.basket-list__item
+                                    img(src="img/peanut-1.png")
+                                    a.title(href="#") Арахис в белом шоколаде, 100 г.
+                                    .quantity x2
+                                    .price 70.00 р.
+                                    button.basket__delete.icon_delete(title="Удалить")
+                            .basket-list__discount
+                               .label Скидка &nbsp; #[span.personal-discount 10%]:
+                                   span.discount-price 7.80 р.
+                               .label Итого:
+                                    span.common-price 70.20 р.
+                            .basket__actions
+                                button.button.icon_shopping-cart
+                                button.button оформление заказа
 
     .header__third-line
         .box
-            .menu
-                a.menu__item(href="#") Орехи
-                a.menu__item(href="#") Сухофрукты
-                a.menu__item(href="#") Цукаты
-                a.menu__item(href="#") Специи и пряности
-                a.menu__item(href="#") Семечки
-                a.menu__item(href="#") Сладости
-                a.menu__item(href="#") Мёд
+            ul.menu
+                li.menu__item Орехи
+                    ul.categories-menu
+                        - for (var i = 0; i < 8; i++) {
+                            li.categories-menu__item
+                                a(href="#")
+                                    img(src="img/peanut-type.png" alt)
+                                    span.title Арахис #[i.icon_arrow-right]
+                        -}
+                li.menu__item Сухофрукты
+                li.menu__item Цукаты
+                li.menu__item Специи и пряности
+                li.menu__item Семечки
+                li.menu__item Сладости
+                li.menu__item Мёд

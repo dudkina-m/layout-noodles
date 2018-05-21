@@ -3,11 +3,11 @@
   border: 4px solid #a57e44;
   border-radius: 4px;
   left: 50%;
-  width: 450px;
   padding: 30px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 450px;
   z-index: 1000;
 
   &__close {
@@ -46,10 +46,10 @@
     }
 
     .divider {
-      width: 100%;
-      height: 2px;
       background-color: #e9e9e9;
+      height: 2px;
       margin: 25px 0;
+      width: 100%;
     }
 
     .product {
@@ -57,14 +57,14 @@
 
       &__options {
         display: flex;
-        justify-content: center;
         flex-direction: row;
+        justify-content: center;
 
         .option {
-          flex-direction: column;
-          margin: 0;
-          justify-content: flex-start !important;
           align-items: flex-start;
+          flex-direction: column;
+          justify-content: flex-start !important;
+          margin: 0;
 
           &__label {
             margin-bottom: 5px;
@@ -128,9 +128,9 @@
   }
 
   &__info {
-    font-weight: 500;
-    font-size: 20px;
     color: #000;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 30px;
   }
 
