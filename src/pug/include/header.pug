@@ -27,8 +27,10 @@ header.header
                     div.nav-dropdown.acc-dropdown
                         button.nav-dropdown__button.acc-dropdown__button.icon_2_Lock личный кабинет
                         ul.nav-dropdown__content.acc-dropdown__content
-                            li.nav-dropdown__item.acc-dropdown__item Регистрация
-                            li.nav-dropdown__item.acc-dropdown__item Авторизация
+                            li.nav-dropdown__item.acc-dropdown__item
+                                a(href="#" data-popup="registration") Регистрация
+                            li.nav-dropdown__item.acc-dropdown__item
+                                a(href="#" data-popup="login") Авторизация
     .header__second-line
         .box
             ul.second-line__list
@@ -40,7 +42,7 @@ header.header
                     .contacts__info
                         a.contacts__number(href="tel:+375294175467") +375 (29) 417-54-67
                         span Ежедневно с 9.00 до 20.00
-                    button.button Заказать звонок
+                    button.button(data-popup="call") Заказать звонок
                 li.second-line__item
                     .basket
                         i.icon_shopping-cart.basket__icon

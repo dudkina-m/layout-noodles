@@ -35,8 +35,8 @@
   }
 
   &__container {
-    margin: 55px 0;
     display: flex;
+    margin: 55px 0;
 
     img {
       height: max-content;
@@ -47,8 +47,8 @@
     margin-left: 30px;
 
     .caption {
-      margin-top: 0;
       line-height: 1;
+      margin-top: 0;
     }
 
     .text {

@@ -17,6 +17,21 @@
         margin-right: 20px;
       }
     }
+
+    &.invalid {
+      .input, .textarea, .dropdown {
+        border: 1px solid #df1818;
+        color: #df1818;
+        position: relative;
+      }
+
+      &:after {
+        content: url("../img/attention.svg");
+        width: 5px;
+        position: absolute;
+        left: 95%;
+      }
+    }
   }
 
   &__label {

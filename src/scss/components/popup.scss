@@ -1,0 +1,150 @@
+.popup {
+  background-color: #fff;
+  border: 4px solid #a57e44;
+  border-radius: 4px;
+  left: 50%;
+  width: 450px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  &__close {
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .text {
+    margin-bottom: 25px;
+  }
+
+  &__container {
+    background-color: rgba(0,0,0, .78);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  &__content {
+    text-align: center;
+
+    .caption {
+      margin-top: 0;
+    }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background-color: #e9e9e9;
+      margin: 25px 0;
+    }
+
+    .product {
+      padding: 0 !important;
+
+      &__options {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .option {
+          flex-direction: column;
+          margin: 0;
+          justify-content: flex-start !important;
+          align-items: flex-start;
+
+          &__label {
+            margin-bottom: 5px;
+          }
+
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &__actions {
+        justify-content: center;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    .form {
+      &__block {
+        justify-content: space-between;
+
+        &.rate {
+          justify-content: flex-start;
+        }
+
+        .input,
+        .textarea {
+          width: 100%;
+        }
+      }
+
+      &__label {
+        min-width: 120px;
+        text-align: left;
+      }
+
+      &.authorize {
+        .form__label {
+          min-width: 90px;
+        }
+
+        .button {
+          padding: 0 60px;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 15px;
+    }
+  }
+
+  &__text-bold {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  &__info {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+      text-decoration: underline;
+    }
+
+    span {
+      padding: 0 8px;
+    }
+  }
+}

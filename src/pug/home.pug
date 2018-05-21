@@ -1,5 +1,6 @@
 extends root/layout
 include mixins/dropdown
+include mixins/popup
 
 block container
     .container
@@ -18,3 +19,132 @@ block container
             section.home-about
                 include include/home/about
         include include/footer
+        .popup__container
+            +popup("subscribe")
+                img(src="img/success.svg" alt)
+                p.popup__text-bold Вы успешно подписались на рассылку!
+            +popup("add-review")
+                p.caption Отзыв
+                .form
+                    .form__block
+                        label.form__label Имя:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Email:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Заголовок:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Отзыв:
+                        textarea.textarea
+                    .form__block.rate
+                        label.form__label Оцените нас:
+                        .review__rate
+                            span.star.icon_15_StarGrey.checked
+                            span.star.icon_15_StarGrey.checked
+                            span.star.icon_15_StarGrey.checked
+                            span.star.icon_15_StarGrey
+                            span.star.icon_15_StarGrey
+                    button.button(data-popup="review-success") оставить отзыв
+            +popup("review-success")
+                img(src="img/success.svg" alt)
+                p.popup__text-bold Спасибо за отзыв!
+            +popup("order-success")
+                img(src="img/success.svg" alt)
+                p.popup__text-bold Ваш заказ принят!
+            +popup("fast-order")
+                p.caption Быстрый заказ
+                .product.card
+                    img(src="img/peanut-1.png" alt)
+                    .product__content
+                        .product__info
+                            span.product__title Арахис в белом шоколаде
+                            span.product__price 10.00 р.
+                        .product__manage
+                            .product__options
+                                .option
+                                    label.option__label Количество:
+                                    input.input
+                                .option
+                                    label.option__label Фасовка, г.:
+                                    +dropdown(["700"])
+                .divider
+                .form
+                    .form__block
+                        label.form__label Имя:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Email:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Телефон:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Комментарий:
+                        textarea.textarea
+                    button.button(data-popup="order-success") оформить заказ
+            +popup("basket")
+                p.caption Ваша корзина
+                img(src="img/peanut-1.png" alt)
+                p.popup__info Арахис в белом шоколаде #[br] добавлен в корзину
+                .product__actions
+                    button.button продолжить покупки
+                    button.button.icon_shopping-cart
+            +popup("call")
+                p.caption Заказать звонок
+                .form
+                    .form__block.invalid
+                        label.form__label Имя:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Телефон:
+                        input.input(type="text")
+                button.button отправить
+            +popup("restore")
+                p.caption Забыли пароль?
+                p.text Введите адрес электронной почты Вашей учетной записи. Нажмите кнопку Продолжить, чтобы получить пароль по электронной почте
+                .form.authorize
+                    .form__block
+                        label.form__label Email:
+                        input.input(type="text")
+                button.button продолжить
+            +popup("login")
+                p.caption Авторизация
+                .form.authorize
+                    .form__block
+                        label.form__label Email:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Пароль:
+                        input.input(type="password")
+                button.button войти
+                .popup__actions
+                    a(href="#" data-popup="registration") Регистрация
+                    span |
+                    a(href="#" data-popup="restore") Забыли пароль?
+            +popup("registration")
+                p.caption Регистрация
+                .form
+                    .form__block
+                        label.form__label Имя:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Фамилия:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Email:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Телефон:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Адрес:
+                        input.input(type="text")
+                    .form__block
+                        label.form__label Пароль:
+                        input.input(type="password")
+                    .form__block
+                        label.form__label Подтвердите пароль:
+                        input.input(type="password")
+                button.button продолжить #[i.icon_arrow-right]
