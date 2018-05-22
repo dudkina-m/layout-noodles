@@ -13,7 +13,7 @@ function initMap() {
     var myMap,
         myPlacemark;
 
-    function init(){
+    function init() {
         myMap = new ymaps.Map("map", {
             center: [55.76, 37.64],
             zoom: 7
@@ -31,7 +31,18 @@ function initMap() {
 function initSlick() {
     $(".carousel").slick({
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false
+                }
+            }
+        ]
     });
 }
 
@@ -39,7 +50,33 @@ function initPopularSlick() {
     $(".popular__content").slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+        {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+            }
+        }]
     });
 }
 
@@ -49,15 +86,64 @@ function initSlickMupltiple() {
         slidesToShow: 4,
         slidesToScroll: 4,
         nextArrow: $("button.recommended.icon_arrow-right"),
-        prevArrow: $("button.recommended.icon_arrow-left")
+        prevArrow: $("button.recommended.icon_arrow-left"),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
-
     $('.stock__slider_sale').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         nextArrow: $("button.sale.icon_arrow-right"),
-        prevArrow: $("button.sale.icon_arrow-left")
+        prevArrow: $("button.sale.icon_arrow-left"),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 }
 

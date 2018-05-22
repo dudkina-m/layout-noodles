@@ -9,6 +9,31 @@
       align-items: center;
       flex-direction: row;
       height: 65px;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__logo {
+
+    .logo {
+      @media screen and (max-width: 767px) {
+        width: 80px;
+        overflow: hidden;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 15px;
     }
   }
 
@@ -20,6 +45,16 @@
       justify-content: space-between;
       padding: 15px 0;
 
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+      }
+
+      @media screen and (max-width: 1200px) {
+        padding: 15px;
+      }
+
       a {
         text-decoration: underline;
       }
@@ -29,9 +64,18 @@
   &__menu {
     padding: 50px 0 35px;
 
+    @media screen and (max-width: 1024px) {
+      padding: 15px 0;
+    }
+
     & > .box {
       flex-direction: row;
       justify-content: space-between;
+
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        padding: 0 15px;
+      }
     }
   }
 
@@ -40,6 +84,19 @@
     display: flex;
     height: auto;
     margin-top: 30px;
+
+    @media screen and (max-width: 767px) {
+      margin: 15px 0;
+      align-items: center;
+
+      .contacts__phone {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+      margin: 0;
+    }
 
     & > .contacts__info {
       margin-left: 15px;
@@ -53,9 +110,19 @@
   &__nav-menu {
     display: flex;
 
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+      margin: 15px 0;
+      width: 100%;
+    }
+
     & > .nav-menu__list {
       &:not(:first-child) {
         margin-left: 80px;
+
+        @media screen and (max-width: 767px) {
+          margin-left: 0;
+        }
       }
 
       & > .nav-menu__item {
@@ -68,6 +135,13 @@
           text-align: left;
         }
       }
+    }
+  }
+
+  &__map {
+    @media screen and (max-width: 767px){
+      display: flex;
+      margin: 0 auto;
     }
   }
 }

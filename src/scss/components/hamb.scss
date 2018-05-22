@@ -1,0 +1,11 @@
+.hamb {
+  &__top-menu {
+    background-color: transparent;
+    border: 0;
+    width: 60px;
+
+    @media screen and (min-width: 1025px) {
+      display: none;
+    }
+  }
+}

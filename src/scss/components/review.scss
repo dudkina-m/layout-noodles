@@ -10,6 +10,10 @@
     .caption {
       margin: 0;
     }
+
+    @media screen and (max-width: 767px) {
+      margin: 25px 0;
+    }
   }
 
   &__content {
@@ -17,6 +21,10 @@
 
   .pagination {
     margin-bottom: 70px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
@@ -55,6 +63,11 @@
   &__user {
     align-items: center;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
 
     .name {
       color: #000;

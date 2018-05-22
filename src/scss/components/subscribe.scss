@@ -3,14 +3,31 @@
   margin-left: 25px;
   width: 100%;
 
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+
   &__label {
     font-size: 20px;
     font-weight: 500;
     white-space: nowrap;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      max-width: 200px;
+      white-space: normal;
+    }
   }
 
   .button {
     border-radius: 0;
     max-width: 170px;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 10px;
+    }
   }
 }

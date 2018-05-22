@@ -28,9 +28,12 @@ body {
   flex-direction: column;
   margin: auto;
   max-width: 1200px;
-  //padding-left: 15px;
-  //padding-right: 15px;
+  min-width: 320px;
   width: 100%;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 15px;
+  }
 }
 
 .caption {
@@ -38,6 +41,12 @@ body {
   font-size: 40px;
   font-weight: 500;
   margin: 25px 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    margin: 15px 0;
+    max-width: 220px;
+  }
 }
 
 .content {

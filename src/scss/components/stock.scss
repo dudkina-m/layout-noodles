@@ -5,11 +5,15 @@
   padding: 40px 0;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
   &__header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin: 25px 0;
 
     .caption {
       margin: 0;

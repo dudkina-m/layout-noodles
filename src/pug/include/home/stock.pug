@@ -5,7 +5,7 @@
             button.sale.icon_arrow-left
             button.sale.icon_arrow-right
 
-    .stock__slider.stock__slider_sale.grid
+    .stock__slider.stock__slider_sale
         - for (var i = 0; i < 8; i++) {
             .grid__item_4
                 include ../product-card-discount
@@ -16,8 +16,8 @@
         .stock__manage
             button.recommended.icon_arrow-left
             button.recommended.icon_arrow-right
-    .stock__slider.stock__slider_recommended.grid
+    .stock__slider.stock__slider_recommended
         - for (var i = 0; i < 8; i++) {
-        .grid__item_4
-            include ../product-card
+            .grid__item_4
+                include ../product-card
         -}

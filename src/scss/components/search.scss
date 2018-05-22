@@ -18,6 +18,10 @@
   & .input:focus ~ .search__autocomplete,
   & .input__no-border:focus ~ .search__autocomplete {
     display: block;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__autocomplete {
