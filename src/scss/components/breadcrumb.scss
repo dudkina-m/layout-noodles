@@ -3,6 +3,12 @@
     color: #000;
     display: inline;
 
+    &:last-child {
+      @media screen and (max-width: 540px) {
+        display: none;
+      }
+    }
+
     & + .breadcrumb__item:before {
       content: '/\00a0';
       padding: 8px;

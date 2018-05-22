@@ -10,6 +10,13 @@
   width: 450px;
   z-index: 1000;
 
+  @media screen and (max-width: 767px) {
+    width: 90%;
+    max-width: 450px;
+    top: 10%;
+    transform: translate(-50%, 0);
+  }
+
   &__close {
     cursor: pointer;
     padding: 5px;

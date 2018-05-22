@@ -33,8 +33,9 @@ block container
                             .categories__header
                                 h1.caption Грецкие орехи
                                 .categories__filters
-                                    label.filter__label Сортировка:
-                                    +dropdown(["По названию А - Я"])
+                                    .sort
+                                        label.filter__label Сортировка:
+                                        +dropdown(["По названию А - Я"])
                                     ul.present
                                         li.present__item
                                             a.icon_32_TablesActive(href="#")

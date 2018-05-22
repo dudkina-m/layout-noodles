@@ -4,7 +4,7 @@ include mixins/dropdown
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
             section.section
@@ -33,8 +33,9 @@ block container
                             .categories__header
                                 h1.caption Грецкие орехи
                                 .categories__filters
-                                    label.filter__label Сортировка:
-                                    +dropdown(["По названию А - Я"])
+                                    .sort
+                                        label.filter__label Сортировка:
+                                        +dropdown(["По названию А - Я"])
                                     ul.present
                                         li.present__item.active
                                             a.icon_32_TablesActive(href="#")
@@ -42,7 +43,7 @@ block container
                                             a.icon_33_LinesNeactive(href="#")
                             .grid
                                 - for (var i = 0; i < 9; i++) {
-                                    .grid__item_3
+                                    .grid__item
                                         include include/product-card
                                 -}
                             include include/pagination
