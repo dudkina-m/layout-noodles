@@ -103,24 +103,21 @@ function initPopularSlick() {
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: true,
-                arrows: false
+                infinite: true
             }
         },
         {
             breakpoint: 800,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
+                slidesToScroll: 2
             }
         },
         {
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
+                slidesToScroll: 1
             }
         }]
     });

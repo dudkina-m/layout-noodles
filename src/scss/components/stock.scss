@@ -1,9 +1,13 @@
 @import '../global';
 
 .stock {
-  background-color: #f7f7f7;
-  padding: 40px 0;
+  background-color: #fff;
+  padding: 0 40px 0;
   position: relative;
+
+  &__slider {
+    z-index: 1;
+  }
 
   @media screen and (max-width: 767px) {
     padding: 0;
@@ -33,5 +37,25 @@
         color: #44c900;
       }
     }
+  }
+}
+
+.recommended__img {
+  left: 10%;
+  position: absolute;
+  top: 69%;
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.sale__img {
+  position: absolute;
+  right: 10%;
+  top: 27%;
+
+  @media screen and (max-width: 1400px) {
+    display: none;
   }
 }
