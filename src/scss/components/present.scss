@@ -1,6 +1,10 @@
 .present {
   display: flex;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__item {
     &:first-child {
       margin-right: 10px;

@@ -3,27 +3,27 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.discount
+            section.section
                 .box
                     +breadcrumb(["Главная"], "Доставка")
                     h1.caption Доставка
                     .grid
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/delivery-time.png')")
                                 .info-card__header 1. Время работы
                                 .info-card__content
                                     span Пн - Пт: #[span.info-card__bold с 19.00 до 23.00]
                                     span Сб - Вс: #[span.info-card__bold с 15.00 до 20.00]
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/delivery.png')")
                                 .info-card__header 2. Доставка
                                 .info-card__content
                                     span Доставка товаров по г. Минску #[span.info-card__bold ПЛАТНАЯ], стоимость #[span.info-card__bold 5 BYN]
                                     span.info-card__italic (Просим обратить внимание, что при любой форме доставки ожидание водителем покупателя по адресу составляет не более 15 минут.)
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/delivery-payment.png')")
                                 .info-card__header 3. Способы оплаты
                                 .info-card__content
@@ -32,6 +32,7 @@ block container
             section.map
                 .box
                     .addresses__container
+                        button.toggle-sidemenu Показать меню
                         ul.side-menu
                             li.side-menu__item
                                 a(href="#") минск, переулок рокоссовского 552

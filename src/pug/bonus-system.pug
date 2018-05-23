@@ -3,13 +3,14 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.personal
+            section.section
                 .box
                     +breadcrumb(["Главная", "Личный кабинет"], "Бонусная система")
                     .personal__container
+                        button.toggle-sidemenu Показать меню
                         .personal__info
                             h1.caption Бонусная система
                             .personal__item #[img(src="img/discount.svg" alt)] Персональная скидка:&nbsp; #[span.personal__discount 5%]

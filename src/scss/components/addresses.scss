@@ -12,6 +12,15 @@
     .side-menu {
       margin-right: 30px;
       min-width: 33.3333333%;
+
+      //@media screen and (max-width: 767px) {
+      //  display: none;
+      //}
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      position: relative;
     }
 
     #map {
@@ -19,6 +28,10 @@
       height: 400px;
       max-width: 66.6666666%;
       width: 100%;
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
     }
   }
-}
+}

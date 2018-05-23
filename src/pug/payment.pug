@@ -3,7 +3,7 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
             section.discount
@@ -12,15 +12,15 @@ block container
                     h1.caption Оплата
                     p Оплатить покупку в интернет-магазине можно несколькими способами.
                     .grid
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/delivery-payment.png')")
                                 .info-card__header 1. Наличный расчет
                                 .info-card__content Наличный расчет - оплата наличными курьеру при покупке товаров на заказ (для Москвы и Московской области) или оплата в нашем магазине при самовывозе
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/payment-cards.png')")
                                 .info-card__header 2. Оплата банковскими картами
                                 .info-card__content Оплата банковскими картами - возможна при оплате покупки в пункте самовывоза
-                        .grid__item_3
+                        .grid__item
                             .info-card__container(style="background-image: url('img/payment-web.png')")
                                 .info-card__header 3. Онлайн-оплата
                                 .info-card__content Оплата при заказе через интернет - магазин при помощи системы webpay

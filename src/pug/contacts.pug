@@ -3,14 +3,14 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.contacts
+            section.section
                 .box
                     +breadcrumb(["Главная"], "Контакты")
                     include include/contacts/phone
-            section.addresses
+            section.section
                 .box
                     include include/contacts/addresses
         include include/footer

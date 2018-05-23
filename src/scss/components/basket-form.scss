@@ -8,6 +8,10 @@
   &__container {
     display: flex;
 
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
     .caption:first-child {
       margin-top: 0;
     }
@@ -21,14 +25,27 @@
     margin-right: 30px;
     width: 60%;
 
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
     .input,
     .textarea {
       width: 55% !important;
+
+      @media screen and (max-width: 767px) {
+        width: 100% !important;
+      }
     }
   }
 
   &__options {
     width: 40%;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-top: 15px;
+    }
 
     .radio__group {
       .radio__container:first-child {

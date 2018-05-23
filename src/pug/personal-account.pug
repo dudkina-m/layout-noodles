@@ -3,13 +3,14 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.personal
+            section.section
                 .box
                     +breadcrumb(["Главная"], "Личный кабинет")
                     .personal__container
+                        button.toggle-sidemenu Показать меню
                         .personal__info
                             h1.caption Личный кабинет
                             ul.personal__list

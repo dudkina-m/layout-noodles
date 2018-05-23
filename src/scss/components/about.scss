@@ -10,15 +10,26 @@
 
   &__img {
     margin: 20px 0;
-    width: max-content;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__subtitle {
     color: #000;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin: 25px 0;
+
+    @media screen and (max-width: 767px) {
+      margin: 15px 0;
+    }
   }
 
   &__list {

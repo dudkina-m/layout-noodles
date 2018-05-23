@@ -5,13 +5,14 @@ include mixins/radio
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.personal
+            section.section
                 .box
                     +breadcrumb(["Главная", "Личный кабинет", "Адреса доставки"], "Редактировать адрес")
                     .personal__container
+                        button.toggle-sidemenu Показать меню
                         .personal__info
                             h1.caption Редактировать адрес
                             .form

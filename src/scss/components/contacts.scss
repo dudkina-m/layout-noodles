@@ -18,6 +18,15 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+
+      .button {
+        margin-top: 15px;
+        width: max-content;
+      }
+    }
+
     & .contacts__number {
       font-size: 20px;
       margin-bottom: 10px;

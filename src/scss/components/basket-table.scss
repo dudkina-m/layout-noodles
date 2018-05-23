@@ -1,8 +1,17 @@
 .basket-table {
-  table-layout: fixed;
 
   th:nth-child(1) {
     width: 15% !important;
+
+    @media screen and (max-width: 767px) {
+     width: auto;
+    }
+  }
+
+  th:nth-child(2) {
+    @media screen and (max-width: 767px) {
+      width: 85%;
+    }
   }
 
   th:nth-child(7) {
@@ -17,6 +26,13 @@
   }
 
   .table__cell {
+
+    &:last-child {
+      @media screen and (max-width: 767px) {
+        padding: 0 !important;
+      }
+    }
+
     img {
       width: 100px;
     }

@@ -8,6 +8,10 @@
   margin-right: 0 !important;
   position: relative;
 
+  &-section {
+    background-color: #fff !important;
+  }
+
   .basket__icon {
     font-size: 25px;
     margin-right: 10px;
@@ -27,6 +31,12 @@
     background-color: transparent;
     border: 0;
     color: #9d0202;
+
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
   }
 
   &__sum {
@@ -59,5 +69,9 @@
 
   &__manage {
     margin-top: 55px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 25px;
+    }
   }
 }

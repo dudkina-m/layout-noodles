@@ -8,6 +8,7 @@
   position: absolute;
   top: 0;
   width: 270px;
+  z-index: 5;
 
   &__item {
     @include transition();
@@ -24,4 +25,4 @@
       color: #fff;
     }
   }
-}
+}

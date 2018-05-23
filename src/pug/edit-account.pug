@@ -3,13 +3,14 @@ include mixins/breadcrumb
 
 block container
     .container
-        include include/header
+        //include include/header
         include include/search
         main.content
-            section.personal
+            section.section
                 .box
                     +breadcrumb(["Главная", "Личный кабинет"], "Редактировать информацию")
                     .personal__container
+                        button.toggle-sidemenu Показать меню
                         .personal__info
                             h1.caption Учетная запись
                             .form
@@ -28,7 +29,6 @@ block container
                             .personal__manage
                                 button.button.button__left #[i.icon_arrow-left] вернуться
                                 button.button.button__right продолжить #[i.icon_arrow-right]
-
                         ul.side-menu
                             li.side-menu__item
                                 a(href="#") личный кабинет

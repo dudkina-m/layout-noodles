@@ -1,5 +1,6 @@
 $(function () {
     modalDisplay();
+    toggleSidemenu();
     if ($("#map").length)
         initMap();
 
@@ -7,6 +8,20 @@ $(function () {
     if ($('.stock__slider').length) initSlickMupltiple();
     if ($('.popular__content').length) initPopularSlick();
 });
+
+function toggleSidemenu() {
+    $('button.toggle-sidemenu').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.side-menu').toggleClass('open');
+            if ($(".side-menu").hasClass('open')) {
+                $('button.toggle-sidemenu').text("Скрыть меню");
+            } else {
+                $('button.toggle-sidemenu').text("Показать меню");
+            }
+        })
+    });
+}
 
 function initMap() {
     ymaps.ready(init);
