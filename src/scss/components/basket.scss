@@ -23,7 +23,8 @@
 
   &:hover {
     .basket-list {
-      display: block;
+      opacity: 1;
+      pointer-events: initial;
     }
   }
 
@@ -31,6 +32,11 @@
     background-color: transparent;
     border: 0;
     color: #9d0202;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #782c08;
+    }
 
     @media screen and (max-width: 767px) {
       position: absolute;

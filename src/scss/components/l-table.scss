@@ -32,16 +32,14 @@
       color: #fff;
       padding: 15px 0;
       vertical-align: middle;
+      border-right: 1px solid #dedede;
     }
 
     th:first-child {
-      border-left: 1px solid #44c900;
-      border-right: 1px solid #dedede;
       width: 25%;
     }
 
     th:last-child {
-      border-left: 1px solid #dedede;
       border-right: 1px solid #44c900;
       width: 25%;
     }
