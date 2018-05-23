@@ -17,6 +17,12 @@
       display: flex;
       justify-content: center;
 
+      .logo__desc {
+        @media screen and (min-width: 1024px)  and (max-width: 1440px) {
+          display: none;
+        }
+      }
+
       .basket {
         @media screen and (max-width: 1023px) {
           display: none;

@@ -4,6 +4,7 @@ $(function () {
     toggleNavmenu();
     toggleCategories();
     toggleContacts();
+    toggleCategoriesView();
 
     if ($("#map").length)
         initMap();
@@ -34,6 +35,13 @@ function toggleNavmenu() {
             $('.nav-menu').toggleClass('open');
         })
     });
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest(".nav-menu").length == 0 && $target.closest("button.hamb__top-menu").length == 0) {
+            e.stopPropagation();
+            $(".nav-menu").removeClass("open");
+        }
+    });
 }
 
 function toggleCategories() {
@@ -41,6 +49,39 @@ function toggleCategories() {
         $(this).click(function (e) {
             e.preventDefault();
             $('.menu').toggleClass('open');
+        })
+    });
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest(".menu").length == 0 && $target.closest("button.hamb__cat-menu").length == 0) {
+            e.stopPropagation();
+            $(".menu").removeClass("open");
+        }
+    });
+}
+
+function toggleCategoriesView() {
+    $('.card-view').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $(".row-view").removeClass("active");
+            $(".card-view").addClass("active");
+            $(".product").removeClass("row");
+            $(".grid").removeClass("rows");
+            $(".grid").addClass("cards");
+            $(".product").addClass("card");
+        })
+    });
+
+    $('.row-view').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $(".card-view").removeClass("active");
+            $(".row-view").addClass("active");
+            $(".product").removeClass("card");
+            $(".grid").removeClass("cards");
+            $(".grid").addClass("rows");
+            $(".product").addClass("row");
         })
     });
 }
@@ -78,9 +119,11 @@ function initSlick() {
     $(".carousel").slick({
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: $(".slider__next"),
+        prevArrow: $(".slider__prev"),
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1440,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

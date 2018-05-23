@@ -13,6 +13,32 @@
     }
   }
 
+  &__prev, &__next {
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    @media screen and (max-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__prev {
+    left: 15%;
+  }
+
+  &__next {
+    right: 15%;
+  }
+
   &__content {
     align-items: center;
     background-image: url('../img/home-slider.png');

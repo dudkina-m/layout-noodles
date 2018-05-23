@@ -1,6 +1,18 @@
 .categories {
   width: 75%;
 
+  .grid.rows {
+    .grid__item {
+      width: 100%;
+    }
+  }
+
+  .grid.cards {
+    .grid__item {
+      width: 33.3333333%
+    }
+  }
+
   @media screen and (max-width: 1023px) {
     width: 100%;
   }
