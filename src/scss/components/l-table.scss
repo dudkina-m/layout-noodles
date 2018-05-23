@@ -12,11 +12,11 @@
   tr {
     @media screen and (max-width: 767px) {
       align-items: center;
+      border-bottom: 1px solid #dedede;
       display: flex;
       flex-direction: column;
-      position: relative;
       padding: 15px 0;
-      border-bottom: 1px solid #dedede;
+      position: relative;
     }
   }
 
@@ -78,9 +78,9 @@
       text-align: center;
 
       @media screen and (max-width: 767px) {
+        background-color: #fff;
         border: 0;
         padding: 10px 0;
-        background-color: #fff;
       }
     }
   }

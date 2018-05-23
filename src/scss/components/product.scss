@@ -72,11 +72,11 @@
       justify-content: space-between;
 
       @media screen and (max-width: 540px) {
-        flex-direction: column;
         align-items: flex-start;
-        width: max-content;
+        flex-direction: column;
         justify-content: flex-start;
         margin: 0 10px;
+        width: max-content;
       }
 
       &__label {

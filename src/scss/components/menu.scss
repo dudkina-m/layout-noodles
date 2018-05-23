@@ -1,3 +1,5 @@
+@import '../global';
+
 .menu {
   align-items: center;
   display: flex;
@@ -5,9 +7,30 @@
   justify-content: space-between;
   width: 100%;
 
+  &.open {
+    transform: none;
+  }
+
+  @media screen and (max-width: 1023px) {
+    @include transition();
+
+    align-items: flex-start;
+    flex-direction: column;
+    height: max-content;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-110%);
+    width: 100%;
+    z-index: 5;
+  }
+
   &__wrapper {
-    position: relative;
     z-index: 1;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+    }
 
     &:hover {
       z-index: 2;
@@ -48,5 +71,13 @@
     font-size: 20px;
     font-weight: 500;
     padding: 15px 20px;
+
+    @media screen and (max-width: 1023px) {
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 15px;
+      width: 100%;
+    }
   }
 }

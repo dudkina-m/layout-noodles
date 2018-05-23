@@ -1,14 +1,10 @@
 @import '../global';
 
-.nav-menu {
+.nav-menu,
+.nav-menu__manage {
   align-items: center;
   display: flex;
   height: 40px;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
-    flex-direction: column;
-  }
 
   &__item {
     @include transition();
@@ -17,10 +13,42 @@
 
     &:not(:first-child) {
       margin-left: 30px;
+      @media screen and (max-width: 1023px) {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      border-bottom: 1px solid #e5e5e5;
+      color: #000;
+      padding: 15px;
+      width: 100%;
     }
 
     &:hover {
       opacity: .7;
     }
+  }
+}
+
+.nav-menu {
+  &.open {
+    transform: none;
+  }
+
+  @media screen and (max-width: 1023px) {
+    @include transition();
+
+    align-items: flex-start;
+    background-color: #fff;
+    color: #000;
+    flex-direction: column;
+    height: max-content;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    transform: translateX(-110%);
+    width: 100%;
+    z-index: 5;
   }
 }

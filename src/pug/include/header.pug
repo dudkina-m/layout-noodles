@@ -8,7 +8,7 @@ header.header
                 a.nav-menu__item(href="#") Оплата
                 a.nav-menu__item(href="#") Контакты
                 a.nav-menu__item(href="#") Скидки
-            ul.nav-menu
+            ul.nav-menu__manage
                 li.currency
                     div.nav-dropdown
                         button.nav-dropdown__button.currency-dropdown__button BYN #[i.currency-dropdown__angle.icon_1_ArrowDown]
@@ -32,19 +32,36 @@ header.header
                                 a(href="#" data-popup="registration") Регистрация
                             li.nav-dropdown__item.acc-dropdown__item
                                 a(href="#" data-popup="login") Авторизация
+                    .account__mob
+                        button.account__button(data-popup="registration") Регистрация
+                        span.divider |
+                        button.account__button(data-popup="login") Вход
+
+    .header__mobile-line
+        .box
+            a.header__logo(href="index.html")
+                img(src="img/mobile-logo.png" alt="logo")
+            .search-mob
+                input.input__no-border(type="text" placeholder="Поиск по названию")
+                button.button.icon_4_Search
     .header__second-line
         .box
             ul.second-line__list
+                li.second-line__item
+                    button.hamb__cat-menu.icon_hamb
                 li.second-line__item
                     a.header__logo(href="/")
                         img(src="img/logo.svg" alt="logo")
                     span Розничный онлайн-магазин #[br] орехов и сухофруктов
                 li.second-line__item
-                    .contacts__info
-                        a.contacts__number(href="tel:+375294175467") +375 (29) 417-54-67
-                        span Ежедневно с 9.00 до 20.00
-                    button.button(data-popup="call") Заказать звонок
+                    button.mobile-header__button.icon_phone-call Контакты
+                    .contacts__container
+                        .contacts__info
+                            a.contacts__number(href="tel:+375294175467") +375 (29) 417-54-67
+                            span Ежедневно с 9.00 до 20.00
+                        button.button(data-popup="call") Заказать звонок
                 li.second-line__item
+                    a.mobile-header__button.icon_shopping-cart(href="#") Корзина
                     .basket
                         i.icon_shopping-cart.basket__icon
                         .basket__info

@@ -1,6 +1,10 @@
 $(function () {
     modalDisplay();
     toggleSidemenu();
+    toggleNavmenu();
+    toggleCategories();
+    toggleContacts();
+
     if ($("#map").length)
         initMap();
 
@@ -19,6 +23,33 @@ function toggleSidemenu() {
             } else {
                 $('button.toggle-sidemenu').text("Показать меню");
             }
+        })
+    });
+}
+
+function toggleNavmenu() {
+    $('button.hamb__top-menu').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.nav-menu').toggleClass('open');
+        })
+    });
+}
+
+function toggleCategories() {
+    $('button.hamb__cat-menu').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.menu').toggleClass('open');
+        })
+    });
+}
+
+function toggleContacts() {
+    $('button.mobile-header__button.icon_phone-call').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.contacts__container').toggleClass("open");
         })
     });
 }

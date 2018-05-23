@@ -3,6 +3,10 @@
 }
 
 .acc-dropdown {
+  @media screen and (max-width: 1023px) {
+    display: none !important;
+  }
+
   &__button {
     background-color: #a57e44;
     color: #fff;

@@ -4,13 +4,21 @@
   border-bottom-right-radius: 4px;
   display: flex;
   flex-wrap: wrap;
-  left: 0;
+  left: 15px;
   opacity: 0;
   padding: 30px;
   pointer-events: none;
   position: absolute;
-  top: 100%;
-  width: 1200px;
+  top: 59px;
+  width: 1169px;
+
+  @media screen and (min-width: 1024px) and (max-width: 1250px) {
+    width: calc(100% - 30px);
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 
   &__item {
     background-color: #fff;

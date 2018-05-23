@@ -3,19 +3,62 @@
     display: flex;
     height: 100px;
     justify-content: space-between;
+    position: relative;
     width: 100%;
 
-    @media screen and (max-width: 1024px) {
-      flex-direction: column;
-      justify-content: flex-start;
+    @media screen and (max-width: 1023px) {
+      color: #fff;
+      height: 46px;
+      justify-content: space-between;
     }
 
     & > .second-line__item {
       align-items: center;
       display: flex;
+      justify-content: center;
+
+      .basket {
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(1) {
+        @media screen and (max-width: 1023px) {
+          max-width: 60px;
+        }
+
+        @media screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        @media screen and (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+      }
 
       & > *:first-child {
         margin-right: 30px;
+
+        @media screen and (max-width: 1023px) {
+          background-color: transparent;
+          height: 46px;
+          margin-right: 0;
+        }
       }
     }
   }
