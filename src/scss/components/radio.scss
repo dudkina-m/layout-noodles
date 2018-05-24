@@ -50,23 +50,23 @@
     left: 0;
     position: absolute;
     top: 0;
+    transition: all .3s ease;
     width: 20px;
-    transition: all 0.3s ease;
 
     &:hover {
       border: 1px solid #a57e44;
     }
 
     &:after {
-      transition: all 0.3s ease;
       background-color: #a57e44;
       border-radius: 50%;
       content: '';
-      opacity: 0;
       height: 10px;
       left: 4px;
+      opacity: 0;
       position: absolute;
       top: 4px;
+      transition: all .3s ease;
       width: 10px;
     }
   }

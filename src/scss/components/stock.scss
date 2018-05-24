@@ -5,7 +5,16 @@
   padding: 0 40px 0;
   position: relative;
 
+  .slick-list {
+    margin: 0 -15px !important;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
   &__slider {
+    overflow: hidden;
     z-index: 1;
   }
 
@@ -41,9 +50,10 @@
 }
 
 .recommended__img {
-  left: 10%;
   position: absolute;
-  top: 69%;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media screen and (max-width: 1400px) {
     display: none;
@@ -51,9 +61,9 @@
 }
 
 .sale__img {
+  left: 100%;
   position: absolute;
-  right: 10%;
-  top: 27%;
+  top: 40%;
 
   @media screen and (max-width: 1400px) {
     display: none;

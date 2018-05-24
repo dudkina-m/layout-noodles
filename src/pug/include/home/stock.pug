@@ -4,20 +4,23 @@
         .stock__manage
             button.sale.icon_arrow-left
             button.sale.icon_arrow-right
-
-    .stock__slider.stock__slider_sale
-        - for (var i = 0; i < 8; i++) {
-            .grid__item_4
-                include ../product-card-discount
-        -}
+    .stock__wrapper
+        img.sale__img(src="img/leaf.png" alt)
+        .stock__slider.stock__slider_sale
+            - for (var i = 0; i < 8; i++) {
+                .grid__item_4
+                    include ../product-card-discount
+            -}
 
     .stock__header
         h1.caption Рекомендуемые товары
         .stock__manage
             button.recommended.icon_arrow-left
             button.recommended.icon_arrow-right
-    .stock__slider.stock__slider_recommended
-        - for (var i = 0; i < 8; i++) {
-            .grid__item_4
-                include ../product-card
-        -}
+    .stock__wrapper
+        img.recommended__img(src="img/nut.png" alt)
+        .stock__slider.stock__slider_recommended
+            - for (var i = 0; i < 8; i++) {
+                .grid__item_4
+                    include ../product-card
+            -}

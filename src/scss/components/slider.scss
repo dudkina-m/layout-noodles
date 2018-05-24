@@ -13,14 +13,15 @@
     }
   }
 
-  &__prev, &__next {
+  &__prev,
+  &__next {
     background: transparent;
     border: 0;
-    font-size: 30px;
     color: white;
-    z-index: 1;
+    font-size: 30px;
     position: absolute;
     top: 50%;
+    z-index: 1;
 
     &:hover {
       opacity: .7;

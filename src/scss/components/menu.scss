@@ -52,7 +52,6 @@
     }
 
     &:after {
-      transition: all 0.3s ease;
       background-color: rgba(0,0,0,.78);
       content: '';
       height: 100%;
@@ -61,6 +60,7 @@
       pointer-events: none;
       position: fixed;
       top: 0;
+      transition: all .3s ease;
       width: 100%;
       z-index: -1;
     }
@@ -74,12 +74,12 @@
     padding: 15px 20px;
 
     @media screen and (max-width: 1023px) {
+      background-color: #fff;
       border-bottom: 1px solid #e5e5e5;
       font-size: 14px;
       font-weight: 400;
       padding: 15px;
       width: 100%;
-      background-color: #fff;
     }
   }
 }

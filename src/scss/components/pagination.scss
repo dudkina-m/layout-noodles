@@ -14,7 +14,7 @@
     font-size: 16px;
     margin: 0 25px;
     padding: 5px;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 
     @media screen and (max-width: 1024px) {
       margin: 0 15px;
@@ -43,8 +43,8 @@
     }
 
     &.active {
-      pointer-events: none;
       color: #44c900;
+      pointer-events: none;
     }
   }
 }

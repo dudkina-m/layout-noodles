@@ -19,6 +19,11 @@
 
   &__content {
     z-index: 1;
+    position: relative;
+  }
+
+  &__wrapper {
+    position: relative;
   }
 
   .pagination {
@@ -85,6 +90,7 @@
 
   &__leaf {
     position: absolute;
+    z-index: 0;
     @media screen and (max-width: 1400px) {
       display: none;
     }
@@ -92,22 +98,24 @@
     &-1 {
       @extend .review__leaf;
 
-      left: 10%;
-      top: 36%;
+      left: 0;
+      top: 29%;
+      transform: translate(-145px, 0);
     }
 
     &-2 {
       @extend .review__leaf;
 
-      left: 78%;
-      top: 15%;
+      left: 100%;
+      top: 0;
+      transform: translate(-75px, -25px);
     }
 
     &-3 {
       @extend .review__leaf;
 
-      left: 64%;
-      top: 74%;
+      top: 86%;
+      left: 75%;
     }
   }
 }
