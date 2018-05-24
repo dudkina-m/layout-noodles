@@ -21,9 +21,13 @@
 
   &__logo {
     .logo {
+      img {
+        max-width: 280px;
+      }
+
       @media screen and (max-width: 767px) {
         overflow: hidden;
-        width: 80px;
+        width: 100px;
       }
     }
 

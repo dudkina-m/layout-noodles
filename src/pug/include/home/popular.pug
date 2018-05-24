@@ -1,7 +1,10 @@
+include ../popular-item
+
 .popular__container
     .box
         .popular-item__caption Популярные категории
         .popular__content
-            -for (var i = 0; i < 8; i++) {
-                include ../popular-item
-            -}
+            +popular-item("img/peanut-group-1.png")
+            +popular-item("img/peanut-group-2.png")
+            +popular-item("img/peanut-group-3.png")
+            +popular-item("img/peanut-group-4.png")
