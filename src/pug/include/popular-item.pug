@@ -1,4 +1,4 @@
-mixin popular-item(src)
+mixin popular-item(src, title)
     a.popular-item(href="#")
         img(src=src alt)
-        span.popular-item__text Грецкие орехи
+        span.popular-item__text= title

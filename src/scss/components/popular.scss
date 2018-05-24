@@ -11,6 +11,21 @@
     }
   }
 
+  &__content {
+    height: 350px;
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide {
+      display: flex !important;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
+
   .slick-next {
     right: -25px;
 
