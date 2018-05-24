@@ -18,8 +18,8 @@
   }
 
   &__content {
-    z-index: 1;
     position: relative;
+    z-index: 1;
   }
 
   &__wrapper {
@@ -114,8 +114,8 @@
     &-3 {
       @extend .review__leaf;
 
-      top: 86%;
       left: 75%;
+      top: 86%;
     }
   }
 }

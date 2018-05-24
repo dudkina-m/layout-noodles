@@ -2,8 +2,8 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  z-index: 10;
   position: relative;
+  z-index: 10;
 
   &__first-line {
     background-color: #f0f0f0;
@@ -38,10 +38,10 @@
 
   &__mobile-line {
     align-items: center;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 7px 0;
-    background-color: #fff;
 
     @media screen and (min-width: 1024px) {
       display: none;
