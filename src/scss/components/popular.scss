@@ -20,14 +20,18 @@
     }
 
     .slick-slide {
-      display: flex !important;
       align-items: flex-end;
+      display: flex !important;
       justify-content: center;
     }
   }
 
   .slick-next {
     right: -25px;
+
+    &:before {
+      content: url('../img/carousel-right.svg');
+    }
 
     @media screen and (max-width: 1440px) {
       right: -10px;
@@ -36,6 +40,10 @@
 
   .slick-prev {
     left: -25px;
+
+    &:before {
+      content: url('../img/carousel-left.svg');
+    }
 
     @media screen and (max-width: 1440px) {
       left: -10px;

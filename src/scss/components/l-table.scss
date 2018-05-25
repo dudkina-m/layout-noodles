@@ -14,7 +14,9 @@
       align-items: center;
       border-bottom: 1px solid #dedede;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       padding: 15px 0;
       position: relative;
     }
@@ -56,6 +58,7 @@
     @media screen and (max-width: 767px) {
       border: 0;
       padding: 10px 0;
+      text-align: center;
     }
   }
 

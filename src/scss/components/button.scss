@@ -34,9 +34,15 @@ $text-color: #fff;
     }
   }
 
-  &.button[class*='icon'] {
-    font-size: 28px;
+  &_with-icon {
+    @extend .button;
     padding: 0;
     width: 50px;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+    }
   }
 }

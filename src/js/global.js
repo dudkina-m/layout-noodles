@@ -87,7 +87,7 @@ function toggleCategoriesView() {
 }
 
 function toggleContacts() {
-    $('button.mobile-header__button.icon_phone-call').each(function () {
+    $('.mobile-header__button.icon_phone-call').each(function () {
         $(this).click(function (e) {
             e.preventDefault();
             $('.contacts__container').toggleClass("open");

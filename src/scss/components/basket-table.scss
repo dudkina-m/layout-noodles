@@ -1,16 +1,6 @@
 .basket-table {
   th:nth-child(1) {
     width: 15% !important;
-
-    @media screen and (max-width: 767px) {
-      width: auto;
-    }
-  }
-
-  th:nth-child(2) {
-    @media screen and (max-width: 767px) {
-      width: 85%;
-    }
   }
 
   th:nth-child(7) {
@@ -28,6 +18,25 @@
     &:last-child {
       @media screen and (max-width: 767px) {
         padding: 0 !important;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(1) {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (max-width: 767px) {
+        width: 100%;
       }
     }
 

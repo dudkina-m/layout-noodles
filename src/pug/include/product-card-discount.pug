@@ -10,11 +10,12 @@
         .product__manage
             .product__options
                 .option
-                    label.option__label Количество:
-                    input.input
-                .option
                     label.option__label Фасовка, г.:
                     +dropdown(["700"])
+                .option
+                    label.option__label Количество:
+                    input.input
             .product__actions
                 button.button купить в 1 клик
-                button.button.icon_shopping-cart
+                button.button_with-icon
+                    i.icon_shopping-cart

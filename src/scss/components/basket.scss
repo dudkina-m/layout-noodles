@@ -53,6 +53,10 @@
     font-weight: 500;
     justify-content: flex-end;
 
+    @media screen and (max-width: 500px) {
+      justify-content: space-between;
+    }
+
     & .discount__percent {
       font-size: inherit;
     }
@@ -78,6 +82,7 @@
 
     @media screen and (max-width: 767px) {
       margin-top: 25px;
+      justify-content: flex-end;
     }
   }
 }
