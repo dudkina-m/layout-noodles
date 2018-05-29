@@ -36,13 +36,14 @@ $text-color: #fff;
 
   &_with-icon {
     @extend .button;
+
     padding: 0;
     width: 50px;
     i {
-      display: flex;
-      justify-content: center;
       align-items: center;
+      display: flex;
       font-size: 28px;
+      justify-content: center;
     }
   }
 }
