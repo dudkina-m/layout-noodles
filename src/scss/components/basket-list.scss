@@ -99,7 +99,7 @@
     display: flex;
     justify-content: flex-end;
 
-    .button:first-child {
+    [class*="button"]:first-child {
       margin-right: 10px;
     }
   }

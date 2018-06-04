@@ -5,6 +5,7 @@ $(function () {
     toggleCategories();
     toggleContacts();
     toggleCategoriesView();
+    tabsLogic();
 
     if ($("#map").length)
         initMap();
@@ -25,6 +26,24 @@ function toggleSidemenu() {
                 $('button.toggle-sidemenu').text("Показать меню");
             }
         })
+    });
+}
+
+function tabsLogic() {
+    $('.case__content').eq(1).hide();
+
+    $('.case__wrapper').each(function () {
+
+        $(this).find('.case__tab').click(function () {
+
+            var index = $(this).index();
+
+            $('.case__tab').removeClass('active');
+            $(this).addClass('active');
+
+            $('.case__content').hide();
+            $('.case__content').eq(index).show();
+        });
     });
 }
 

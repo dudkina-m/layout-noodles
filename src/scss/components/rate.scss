@@ -1,0 +1,30 @@
+.rate {
+  float: left;
+  transition: all .3s ease;
+
+  & > input {
+    display: none;
+
+    &:checked ~ .rate__star {
+      color: #edb423;
+      font-size: 18px;
+      transition: all .3s ease;
+    }
+  }
+
+  &:not(:checked) > .rate__star:hover,
+  &:not(:checked) > .rate__star:hover ~ .rate__star {
+    color: #edb423;
+    font-size: 18px;
+    transition: all .3s ease;
+  }
+
+  &__star {
+    color: #ccc;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    margin: 0 3px;
+    transition: all .3s ease;
+  }
+}

@@ -101,6 +101,8 @@
         justify-content: space-between;
 
         &.rate {
+          align-items: center;
+          height: 40px;
           justify-content: flex-start;
         }
 

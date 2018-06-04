@@ -35,6 +35,11 @@
   &.card {
     padding: 25px;
     text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 
     .product__info {
       align-items: center;

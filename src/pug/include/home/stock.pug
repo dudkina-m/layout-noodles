@@ -8,7 +8,7 @@
         img.sale__img(src="img/leaf.png" alt)
         .stock__slider.stock__slider_sale
             - for (var i = 0; i < 8; i++) {
-                .grid__item_4
+                .grid__item
                     include ../product-card-discount
             -}
 
@@ -21,6 +21,6 @@
         img.recommended__img(src="img/nut.png" alt)
         .stock__slider.stock__slider_recommended
             - for (var i = 0; i < 8; i++) {
-                .grid__item_4
+                .grid__item
                     include ../product-card
             -}

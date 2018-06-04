@@ -49,24 +49,6 @@
     margin-bottom: 30px;
   }
 
-  &__rate {
-    align-items: center;
-    display: flex;
-
-    .star {
-      color: #ccc;
-
-      &.checked {
-        color: #eeba28;
-        font-size: 16px;
-
-        &:before {
-          content: '\EA0B';
-        }
-      }
-    }
-  }
-
   &__user {
     align-items: center;
     display: flex;

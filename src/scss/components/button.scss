@@ -16,6 +16,12 @@ $text-color: #fff;
   padding: 0 30px;
   text-transform: uppercase;
 
+  &:not(button) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &:hover {
     box-shadow: 0 0 10px $bg-color;
   }

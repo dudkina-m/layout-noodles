@@ -39,12 +39,7 @@ block container
                         textarea.textarea
                     .form__block.rate
                         label.form__label Оцените нас:
-                        .review__rate
-                            span.star.icon_15_StarGrey.checked
-                            span.star.icon_15_StarGrey.checked
-                            span.star.icon_15_StarGrey.checked
-                            span.star.icon_15_StarGrey
-                            span.star.icon_15_StarGrey
+                        include include/rate
                     button.button(data-popup="review-success") оставить отзыв
             +popup("review-success")
                 img(src="img/success.svg" alt)

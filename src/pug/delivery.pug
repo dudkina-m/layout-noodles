@@ -31,16 +31,16 @@ block container
                                     span.info-card__italic (непосредственно курьеру при получении заказа)
             section.map
                 .box
-                    .addresses__container
+                    .addresses__container.case__wrapper
                         button.toggle-sidemenu Показать меню
                         ul.side-menu
-                            li.side-menu__item
-                                a(href="#") минск, переулок рокоссовского 552
-                            li.side-menu__item.active
-                                a(href="#") Минск, первомайская 234
-                            li.side-menu__item
-                                a(href="#") минск, азгура, 43, пом. 110
-                            li.side-menu__item
-                                a(href="#") Москва, большая ордынка, 31, пом. 53
-                        #map
+                            li.side-menu__item.case__tab.active
+                                a минск, переулок рокоссовского 552
+                            li.side-menu__item.case__tab
+                                a Минск, первомайская 234
+                            li.side-menu__item.case__tab
+                                a минск, азгура, 43, пом. 110
+                            li.side-menu__item.case__tab
+                                a Москва, большая ордынка, 31, пом. 53
+                        .case__content#map
         include include/footer
