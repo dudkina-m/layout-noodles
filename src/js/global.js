@@ -4,8 +4,8 @@ $(function () {
     toggleNavmenu();
     toggleCategories();
     toggleContacts();
-    toggleCategoriesView();
     tabsLogic();
+    changeDeliveryType();
 
     if ($("#map").length)
         initMap();
@@ -76,32 +76,6 @@ function toggleCategories() {
             e.stopPropagation();
             $(".menu").removeClass("open");
         }
-    });
-}
-
-function toggleCategoriesView() {
-    $('.card-view').each(function () {
-        $(this).click(function (e) {
-            e.preventDefault();
-            $(".row-view").removeClass("active");
-            $(".card-view").addClass("active");
-            $(".product").removeClass("row");
-            $(".grid").removeClass("rows");
-            $(".grid").addClass("cards");
-            $(".product").addClass("card");
-        })
-    });
-
-    $('.row-view').each(function () {
-        $(this).click(function (e) {
-            e.preventDefault();
-            $(".card-view").removeClass("active");
-            $(".row-view").addClass("active");
-            $(".product").removeClass("card");
-            $(".grid").removeClass("cards");
-            $(".grid").addClass("rows");
-            $(".product").addClass("row");
-        })
     });
 }
 
@@ -273,5 +247,21 @@ function modalDisplay() {
         if (!$(e.target).closest('.popup').length) {
             $('.popup__container').fadeOut();
         }
+    });
+}
+
+function changeDeliveryType() {
+    $('.radio__group').each(function () {
+        $('.address-form').hide();
+
+        $(this).find('#self').click(function () {
+            $('.address-form__dropdown').show();
+            $('.address-form').hide();
+        });
+
+        $(this).find('#courier').click(function () {
+            $('.address-form__dropdown').hide();
+            $('.address-form').show();
+        });
     });
 }

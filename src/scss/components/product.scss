@@ -3,6 +3,10 @@
 .product {
   @include transition();
 
+  img {
+    height: 100px;
+  }
+
   background-color: #fff;
   border-radius: 4px;
   box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .04);
@@ -11,24 +15,6 @@
   &.have-discount {
     .product__price {
       color: #df1818;
-    }
-  }
-
-  &:hover {
-    box-shadow: 0 0 30px 0 rgba(0, 3, 1, .2);
-  }
-
-  &.row {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 40px;
-
-    img {
-      width: 240px;
-    }
-
-    .product__info {
-      justify-content: space-between;
     }
   }
 
@@ -94,6 +80,10 @@
     }
   }
 
+  &:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 3, 1, .2);
+  }
+
   &__content {
     margin-left: 30px;
     width: 100%;
@@ -108,6 +98,7 @@
     color: #000;
     font-size: 20px;
     font-weight: 500;
+    height: 100px;
   }
 
   &__price {

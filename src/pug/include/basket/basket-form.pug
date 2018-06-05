@@ -17,11 +17,22 @@
     .basket-form__options
         h1.caption Способ доставки
         .radio__group
-            +radio("Самовывоз", "delivery-type", "self")
+            +radio("Самовывоз", "delivery-type", "self", "checked")
             +radio("Курьерская доставка", "delivery-type", "courier")
 
         h1.caption Адрес магазина
-        +dropdown(["Адрес магазина #1"])
+        .address-form__dropdown
+            +dropdown(["Адрес магазина #1"])
+        .address-form
+            .address-form__row
+                label.address-form__label Улица:
+                input.input(type="text")
+            .address-form__row
+                label.address-form__label Дом:
+                input.input.short(type="text")
+                label.address-form__label Квартира:
+                input.input.short(type="text")
+
 
         h1.caption Способ оплаты
         .radio__group

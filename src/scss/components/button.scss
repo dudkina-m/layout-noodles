@@ -17,8 +17,8 @@ $text-color: #fff;
   text-transform: uppercase;
 
   &:not(button) {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 
@@ -50,6 +50,26 @@ $text-color: #fff;
       display: flex;
       font-size: 28px;
       justify-content: center;
+    }
+  }
+
+  &__dec {
+    @include transition();
+
+    background-color: transparent;
+    border: 0;
+    color: #c6c6c6;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 0 7px;
+
+    &.min {
+      color: #782c08;
+    }
+
+    &:hover {
+      opacity: .7;
     }
   }
 }

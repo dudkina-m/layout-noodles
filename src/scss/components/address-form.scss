@@ -1,0 +1,19 @@
+.address-form {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+
+    & .input.short {
+      margin-right: 30px;
+      max-width: 70px;
+    }
+  }
+
+  &__label {
+    width: 100px;
+  }
+}

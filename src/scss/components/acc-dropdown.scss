@@ -8,13 +8,13 @@
   }
 
   &__button {
+    align-items: center;
     background-color: #782c08;
     color: #fff;
+    display: flex;
+    justify-content: center;
     padding: 0 30px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:before {
       margin-right: 15px;
