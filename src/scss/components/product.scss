@@ -3,14 +3,14 @@
 .product {
   @include transition();
 
-  img {
-    height: 100px;
-  }
-
   background-color: #fff;
   border-radius: 4px;
   box-shadow: .5px .866px 10px 0 rgba(0, 3, 1, .04);
   position: relative;
+
+  img {
+    height: 100px;
+  }
 
   &.have-discount {
     .product__price {
@@ -19,13 +19,13 @@
   }
 
   &.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding: 25px;
     text-align: center;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
 
     .product__info {
       align-items: center;
